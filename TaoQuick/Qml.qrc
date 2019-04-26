@@ -1,5 +1,21 @@
 <RCC>
     <qresource prefix="/">
+        <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
+        <file>Qml/Config/TConfig.qml</file>
+        <file>Qml/BasicComponent/Button/TImageBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TImgTextBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TOpacityImgBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TTextBtn.qml</file>
+        <file>Qml/BasicComponent/Image/TOpacityImg.qml</file>
+        <file>Qml/BasicComponent/Mouse/TMoveArea.qml</file>
+        <file>Qml/BasicComponent/Mouse/TTransArea.qml</file>
+        <file>Qml/BasicComponent/Others/TComboBox.qml</file>
+        <file>Qml/BasicComponent/Others/TPopup.qml</file>
+        <file>Qml/BasicComponent/Others/TTree.qml</file>
+        <file>Qml/BasicComponent/Others/TTreeStyle.qml</file>
+        <file>Qml/BasicComponent/Text/TText.qml</file>
+        <file>Qml/BasicComponent/Text/TTextArea.qml</file>
+        <file>Qml/BasicComponent/Text/TTextField.qml</file>
         <file>Qml/BizComponent/TActiveImageBtn.qml</file>
         <file>Qml/BizComponent/TBtnField.qml</file>
         <file>Qml/BizComponent/TColorActiveBtn.qml</file>
@@ -16,22 +32,5 @@
         <file>Qml/BizComponent/TSearchBox.qml</file>
         <file>Qml/BizComponent/TTextWithTip.qml</file>
         <file>Qml/BizComponent/TTipMsgBox.qml</file>
-        <file>Qml/Config/TConfig.qml</file>
-        <file>Qml/qmldir</file>
-        <file>Qml/BasicComponent/Button/TImageBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TImgTextBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TOpacityImgBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TTextBtn.qml</file>
-        <file>Qml/BasicComponent/Image/TOpacityImg.qml</file>
-        <file>Qml/BasicComponent/Mouse/TMoveArea.qml</file>
-        <file>Qml/BasicComponent/Mouse/TTransArea.qml</file>
-        <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
-        <file>Qml/BasicComponent/Others/TComboBox.qml</file>
-        <file>Qml/BasicComponent/Others/TPopup.qml</file>
-        <file>Qml/BasicComponent/Others/TTree.qml</file>
-        <file>Qml/BasicComponent/Others/TTreeStyle.qml</file>
-        <file>Qml/BasicComponent/Text/TText.qml</file>
-        <file>Qml/BasicComponent/Text/TTextArea.qml</file>
-        <file>Qml/BasicComponent/Text/TTextField.qml</file>
     </qresource>
 </RCC>

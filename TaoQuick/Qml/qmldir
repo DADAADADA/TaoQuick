@@ -41,7 +41,5 @@ TTextWithTip 1.0 BizComponent/TTextWithTip.qml
 TTipMsgBox 1.0 BizComponent/TTipMsgBox.qml
 TImageWithTip 1.0 BizComponent/TImageWithTip.qml
 
-singleton TConfig Config/TConfig.qml
-
-
+#singleton TConfig 1.0 Config/TConfig.qml
 designersupported
