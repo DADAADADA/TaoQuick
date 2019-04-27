@@ -6,5 +6,9 @@
         <file>Image/logo/logo_transparent.png</file>
         <file>Image/logo/logo_white_black.png</file>
         <file>Image/logo/logo_white_color.png</file>
+        <file>Image/Button/Button.png</file>
+        <file>Image/Button/Button_Disabled.png</file>
+        <file>Image/Button/Button_Hovered.png</file>
+        <file>Image/Button/Button_Pressed.png</file>
     </qresource>
 </RCC>

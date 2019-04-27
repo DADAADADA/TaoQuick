@@ -1,6 +1,7 @@
 ﻿import QtQuick 2.9
 import QtQuick.Controls 2.0
-import "../.."
+import "../Text"
+import "../../Config"
 Rectangle {
     id: root
     property alias textItem: t
@@ -9,9 +10,21 @@ Rectangle {
     property alias textColor: t.color
     property alias textHorizontalAlignment: t.horizontalAlignment
     property alias textVerticalAlignment: t.verticalAlignment
-    property alias containsMouse: mouseBtn.containsMouse
-    property alias containsPress: mouseBtn.containsPress
+    property alias containsMouse: area.containsMouse
+    property alias containsPress: area.containsPress
     signal click();
+    color: enabled ?
+               (containsPress ?
+                    TConfig.buttonStyle.pressedColor
+                        :(containsMouse
+                            ? TConfig.buttonStyle.hoveredColor
+                            : TConfig.buttonStyle.normalColor
+                          )
+                )
+                : TConfig.buttonStyle.disabledColor
+
+    border.color: TConfig.buttonStyle.borderColor
+    border.width: (containsPress || containsMouse) ? 1 : 0
 
     TText {
         id: t
@@ -20,7 +33,7 @@ Rectangle {
     }
 
     MouseArea {
-        id: mouseBtn
+        id: area
         anchors.fill: parent;
         hoverEnabled: parent.enabled;
         onClicked: root.click();

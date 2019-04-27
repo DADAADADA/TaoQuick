@@ -50,10 +50,10 @@ QtObject {
         id: inputStyle
         objectName: "inputStyle"
         property color hoveredColor: lightGreen
-        property color borderColor: lightGreen
         property color backgroundColor: darkcyan
-        property color backgroundBorderColor: lightGreen
-        property color selectedColor: textStyle.normalColor
+        property color borderColor: steelGray
+        property color borderFocusColor: lightGreen
+        property color selectedColor: white
         property color selectionColor: steelBlue
     }
      property var buttonStyle: QtObject {
@@ -64,5 +64,6 @@ QtObject {
         property color pressedColor: darkGreen
         property color disabledColor: steelGray
         property color borderColor: lightBlue
+        property color backgroundColor: steelGreen
     }
 }

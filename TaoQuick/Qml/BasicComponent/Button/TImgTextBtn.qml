@@ -1,8 +1,14 @@
 ﻿import QtQuick 2.9
 import QtQuick.Controls 2.0
-import "../.."
+import "../../Config"
+import "../Text"
 Rectangle {
     id: root
+    property url normalUrl
+    property url hoveredUrl
+    property url pressedUrl
+    property url disabledUrl
+
     property alias imageItem: img
     property alias imageUrl: img.source
     property alias imageWidth: img.width
@@ -14,14 +20,13 @@ Rectangle {
     property alias textHorizontalAlignment: t.horizontalAlignment
     property alias textVerticalAlignment: t.verticalAlignment
     property alias rowItem: row
-    property alias containsMouse: mouseBtn.containsMouse
-    property alias containsPress: mouseBtn.containsPress
+    property alias containsMouse: area.containsMouse
+    property alias containsPress: area.containsPress
     signal click();
 
-    border.color: TConfig.buttonBorderColor
-    border.width: 1
-    color: TConfig.buttonBackgroundColor
-
+    border.color: TConfig.buttonStyle.borderColor
+    border.width: (containsPress || containsMouse) ? 1 : 0
+    color: TConfig.buttonStyle.backgroundColor
     Row {
         id: row
         anchors.centerIn: parent
@@ -29,6 +34,7 @@ Rectangle {
         Image {
             id: img
             anchors.verticalCenter: parent.verticalCenter
+            source: root.enabled ? (containsPress ? pressedUrl : (containsMouse ? hoveredUrl : normalUrl)) : disabledUrl
         }
         TText {
             id: t
@@ -37,7 +43,7 @@ Rectangle {
         }
     }
     MouseArea {
-        id: mouseBtn
+        id: area
         anchors.fill: parent;
         hoverEnabled: parent.enabled;
         onClicked: root.click();
