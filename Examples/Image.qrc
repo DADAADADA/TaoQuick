@@ -1,2 +1,10 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>Image/logo/logo_color.png</file>
+        <file>Image/logo/logo_flat_transparent.png</file>
+        <file>Image/logo/logo_grayscale_transparent.png</file>
+        <file>Image/logo/logo_transparent.png</file>
+        <file>Image/logo/logo_white_black.png</file>
+        <file>Image/logo/logo_white_color.png</file>
+    </qresource>
+</RCC>

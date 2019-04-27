@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/Tao">
         <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
         <file>Qml/Config/TConfig.qml</file>
         <file>Qml/BasicComponent/Button/TImageBtn.qml</file>
@@ -16,21 +16,6 @@
         <file>Qml/BasicComponent/Text/TText.qml</file>
         <file>Qml/BasicComponent/Text/TTextArea.qml</file>
         <file>Qml/BasicComponent/Text/TTextField.qml</file>
-        <file>Qml/BizComponent/TActiveImageBtn.qml</file>
-        <file>Qml/BizComponent/TBtnField.qml</file>
-        <file>Qml/BizComponent/TColorActiveBtn.qml</file>
-        <file>Qml/BizComponent/TDialog.qml</file>
-        <file>Qml/BizComponent/TDialogTextBtn.qml</file>
-        <file>Qml/BizComponent/TDialogTitle.qml</file>
-        <file>Qml/BizComponent/THoverField.qml</file>
-        <file>Qml/BizComponent/THoverImageBtn.qml</file>
-        <file>Qml/BizComponent/TImageField.qml</file>
-        <file>Qml/BizComponent/TImageWithTip.qml</file>
-        <file>Qml/BizComponent/TMessageBox.qml</file>
-        <file>Qml/BizComponent/TOColorImgBtn.qml</file>
-        <file>Qml/BizComponent/TOImgBtn.qml</file>
-        <file>Qml/BizComponent/TSearchBox.qml</file>
-        <file>Qml/BizComponent/TTextWithTip.qml</file>
-        <file>Qml/BizComponent/TTipMsgBox.qml</file>
+        <file>Qml/BasicComponent/Button/TGradientBtn.qml</file>
     </qresource>
 </RCC>

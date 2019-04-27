@@ -1,7 +1,7 @@
 import QtQuick 2.9
-import "../BasicComponent"
+import "../BasicComponent/Button"
 import "../Config"
-EImageBtn {
+TImageBtn {
 
     property bool isActived: false
 

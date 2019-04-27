@@ -3,16 +3,16 @@ import QtQuick.Controls 1.4
 TreeView {
     id:primaryView
 
-    property string editTreeRole: "title"
+//    property string editTreeRole: "title"
 
-    headerVisible:false
-    frameVisible:false
-    style: ETreeStyle {
-        id: treeStyle
-    }
-    TableViewColumn
-    {
-        role: editTreeRole
-        title: ""
-    }
+//    headerVisible:false
+//    frameVisible:false
+//    style: ETreeStyle {
+//        id: treeStyle
+//    }
+//    TableViewColumn
+//    {
+//        role: editTreeRole
+//        title: ""
+//    }
 }

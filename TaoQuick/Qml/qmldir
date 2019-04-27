@@ -1,13 +1,13 @@
 module TaoQuick
 plugin TaoQuick
 #classname QtQuickControls1Plugin
-#typeinfo plugins.qmltypes
+typeinfo plugins.qmltypes
 
 TImageBtn 1.0 BasicComponent/Button/TImageBtn.qml
 TTextBtn 1.0 BasicComponent/Button/TTextBtn.qml
 TOpacityImgBtn 1.0 BasicComponent/Button/TOpacityImgBtn.qml
 TImgTextBtn 1.0 BasicComponent/Button/TImgTextBtn.qml
-
+TGradientBtn 1.0 BasicComponent/Button/TGradientBtn.qml
 TOpacityImg 1.0 BasicComponent/Image/TOpacityImg.qml
 
 TMoveArea 1.0 BasicComponent/Mouse/TMoveArea.qml
@@ -23,23 +23,5 @@ TBusyIndicator 1.0 BasicComponent/Others/TBusyIndicator.qml
 TComboBox 1.0 BasicComponent/Others/TComboBox.qml
 TPopup 1.0 BasicComponent/Others/TPopup.qml
 
-
-TActiveImageBtn 1.0 BizComponent/TActiveImageBtn.qml
-TBtnField 1.0 BizComponent/TBtnField.qml
-TDialog 1.0 BizComponent/TDialog.qml
-TDialogTextBtn 1.0 BizComponent/TDialogTextBtn.qml
-TDialogTitle 1.0 BizComponent/TDialogTitle.qml
-THoverField 1.0 BizComponent/THoverField.qml
-THoverImageBtn 1.0 BizComponent/THoverImageBtn.qml
-TImageField 1.0 BizComponent/TImageField.qml
-TMessageBox 1.0 BizComponent/TMessageBox.qml
-TSearchBox 1.0 BizComponent/TSearchBox.qml
-TOColorImgBtn 1.0 BizComponent/TOColorImgBtn.qml
-TOImgBtn 1.0 BizComponent/TOImgBtn.qml
-TColorActiveBtn 1.0 BizComponent/TColorActiveBtn.qml
-TTextWithTip 1.0 BizComponent/TTextWithTip.qml
-TTipMsgBox 1.0 BizComponent/TTipMsgBox.qml
-TImageWithTip 1.0 BizComponent/TImageWithTip.qml
-
-#singleton TConfig 1.0 Config/TConfig.qml
+singleton TConfig 1.0 Config/TConfig.qml
 designersupported

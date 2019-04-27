@@ -19,3 +19,5 @@ SOURCES += \
 RESOURCES += \
     Qml.qrc \
     Image.qrc
+
+HEADERS +=

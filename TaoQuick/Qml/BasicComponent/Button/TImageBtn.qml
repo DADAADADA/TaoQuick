@@ -1,6 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
-
+import "../.."
 Rectangle {
     id: root
     property alias imageItem: img
@@ -14,7 +14,7 @@ Rectangle {
 
     Image {
         id: img
-        anchors.centerIn: parent
+        anchors.fill: parent
     }
 
     MouseArea {

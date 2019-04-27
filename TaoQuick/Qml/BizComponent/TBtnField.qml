@@ -1,6 +1,7 @@
 ﻿import QtQuick 2.9
 import "../Config"
-import "../BasicComponent"
+import "../BasicComponent/Text"
+import "../BasicComponent/Button"
 ETextField {
     property color borderColor: EConfig.eBorder
     property color borderHovered: EConfig.eHoveredBackGround
@@ -27,7 +28,7 @@ ETextField {
         color: backgroundColor
         border.width: 1
         border.color: containsPress ? borderSelected : (containsMouse ? borderHovered : borderColor)
-        EHoverImageBtn {
+        THoverImageBtn {
             id: btn
             height: parent.height / 2
             width: height
