@@ -10,8 +10,8 @@
 | :---------------: | :-----------------: |
 | ![lin-badge]      | ![win-badge]        |
 
-[lin-badge]: https://travis-ci.org/wentaojia2014/TaoQuick.svg?branch=master "Travis build status"
-[lin-link]: https://travis-ci.org/wentaojia2014/TaoQuick "Travis build status"
+[lin-badge]: https://travis-ci.com/wentaojia2014/TaoQuick.svg?branch=master "Travis build status"
+[lin-link]: https://travis-ci.com/wentaojia2014/TaoQuick "Travis build status"
 [win-badge]: https://ci.appveyor.com/api/projects/status/ontim37g33hvfv72?svg=true "AppVeyor build status"
 [win-link]: https://ci.appveyor.com/project/jiawentao/TaoQuick "AppVeyor build status"
 ## License
