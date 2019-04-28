@@ -1,4 +1,4 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
 import QtQuick.Controls 2.0
 import "qrc:/Tao/Qml/Config"
 import "qrc:/Tao/Qml/BasicComponent/Text"
@@ -73,13 +73,14 @@ Item {
         }
 
         TImgTextBtn {
-            width: 120
+            width: 100
             height: 48
             normalUrl: "qrc:/Image/Button/Button.png"
             hoveredUrl: "qrc:/Image/Button/Button_Hovered.png"
             pressedUrl: "qrc:/Image/Button/Button_Pressed.png"
             disabledUrl: "qrc:/Image/Button/Button_Disabled.png"
             text: qsTr("按钮")
+            color: TConfig.cyan
             onClick: {
                 console.log("你按下了图片+文字按钮")
             }

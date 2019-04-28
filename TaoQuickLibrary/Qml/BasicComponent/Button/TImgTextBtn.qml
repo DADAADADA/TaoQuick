@@ -39,7 +39,7 @@ Rectangle {
         TText {
             id: t
             anchors.verticalCenter: parent.verticalCenter
-            color: TConfig.textColor
+            color: TConfig.textStyle.normalColor
         }
     }
     MouseArea {

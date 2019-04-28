@@ -1,4 +1,4 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
 import "qrc:/Tao/Qml/Config"
 import "qrc:/Tao/Qml/BasicComponent/Text"
 Item {
