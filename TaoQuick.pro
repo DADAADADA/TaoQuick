@@ -1,5 +1,5 @@
 TEMPLATE = subdirs
 
-SUBDIRS += TaoQuick \
+SUBDIRS += TaoQuickLibrary \
     Examples
 OTHER_FILES += README.md
