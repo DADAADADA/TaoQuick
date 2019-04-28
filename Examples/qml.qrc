@@ -20,5 +20,6 @@
         <file>Qml/Contents/FunctionComponent/IPAddress.qml</file>
         <file>Qml/Contents/FunctionComponent/QRCode.qml</file>
         <file>Qml/Contents/Welcome/Welcome.qml</file>
+        <file>Qml/Contents/CoolComponent/ScrollList.qml</file>
     </qresource>
 </RCC>
