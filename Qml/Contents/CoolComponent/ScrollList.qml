@@ -40,7 +40,6 @@ Item {
             repeat: true
             onTriggered: {
                 listView.currentRowIndex++
-                console.log(listView.currentRowIndex)
                 if (listView.currentRowIndex === listView.count) {
                     timer.stop()
                 }
