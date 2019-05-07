@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Qml/main.qml</file>
+        <file>Qml/Page/MenuPage.qml</file>
+        <file>Qml/Page/ContentPage.qml</file>
+        <file>Qml/Page/TitlePage.qml</file>
+        <file>Qml/Contents/BaseComponent/Buttons.qml</file>
+        <file>Qml/Contents/BaseComponent/DropDowns.qml</file>
+        <file>Qml/Contents/BaseComponent/Progresses.qml</file>
+        <file>Qml/Contents/BaseComponent/Tabs.qml</file>
+        <file>Qml/Contents/BaseComponent/Texts.qml</file>
+        <file>Qml/Contents/CoolComponent/ArrowFlow.qml</file>
+        <file>Qml/Contents/CoolComponent/FireworksDance.qml</file>
+        <file>Qml/Contents/CoolComponent/HalleyComet.qml</file>
+        <file>Qml/Contents/CoolComponent/HappyFlame.qml</file>
+        <file>Qml/Contents/CoolComponent/PowerBall.qml</file>
+        <file>Qml/Contents/CoolComponent/SadFrost.qml</file>
+        <file>Qml/Contents/FunctionComponent/Badge.qml</file>
+        <file>Qml/Contents/FunctionComponent/Barrage.qml</file>
+        <file>Qml/Contents/FunctionComponent/IPAddress.qml</file>
+        <file>Qml/Contents/FunctionComponent/QRCode.qml</file>
+        <file>Qml/Contents/Welcome/Welcome.qml</file>
+        <file>Qml/Contents/CoolComponent/ScrollList.qml</file>
+        <file>Qml/ContentData.js</file>
+        <file>Qml/BasicComponent/Button/TGradientBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TImageBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TImgTextBtn.qml</file>
+        <file>Qml/BasicComponent/Button/TTextBtn.qml</file>
+        <file>Qml/BasicComponent/Mouse/TMoveArea.qml</file>
+        <file>Qml/BasicComponent/Mouse/TTransArea.qml</file>
+        <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
+        <file>Qml/BasicComponent/Text/TText.qml</file>
+        <file>Qml/BasicComponent/Text/TTextArea.qml</file>
+        <file>Qml/BasicComponent/Text/TTextField.qml</file>
+        <file>Qml/Config/TConfig.qml</file>
+        <file>Qml/Config/qmldir</file>
+        <file>Qml/BasicComponent/qmldir</file>
+        <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
+        <file>Qml/BasicComponent/Others/TDragItem.qml</file>
+    </qresource>
+</RCC>
