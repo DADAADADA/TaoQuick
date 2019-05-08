@@ -1,4 +1,4 @@
-#module TaoQuick
+﻿#module TaoQuick
 
 TGradientBtn 1.0 Button/TGradientBtn.qml
 TImageBtn 1.0 Button/TImageBtn.qml

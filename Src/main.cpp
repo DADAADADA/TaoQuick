@@ -1,14 +1,14 @@
 #include "stdafx.h"
 
 #include "TaoView.h"
-
+#include "Logger/Logger.h"
 #include <QGuiApplication>
 #include <QQmlContext>
 
 int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);
-
+    Logger::initLog();
     TaoView view;
 
     view.rootContext()->setContextProperty("view", &view);

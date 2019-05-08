@@ -19,8 +19,11 @@ QML2_IMPORT_PATH =
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
 HEADERS += \
+    Src/Logger/Logger.h \
+    Src/Logger/LoggerTemplate.h \
     Src/TaoView.h
 SOURCES += \
+    Src/Logger/Logger.cpp \
     Src/TaoView.cpp \
     Src/main.cpp
 

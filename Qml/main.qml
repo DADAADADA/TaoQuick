@@ -19,7 +19,6 @@ Item {
         TMoveArea {
             anchors.fill: parent
             onMove: {
-//                view.setGeometry(view.x + xOffset, view.y + yOffset, view.width, view.height)
                 view.x += xOffset
                 view.y += yOffset
             }
