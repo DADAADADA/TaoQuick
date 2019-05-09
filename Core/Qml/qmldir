@@ -11,8 +11,5 @@ TTransArea 1.0 BasicComponent/Mouse/TTransArea.qml
 TBusyIndicator 1.0 BasicComponent/Others/TBusyIndicator.qml
 TDragItem 1.0 BasicComponent/Others/TDragItem.qml
 TResizeBorder 1.0 BasicComponent/Others/TResizeBorder.qml
-
-TText 1.0 BasicComponent/Text/TText.qml
-TTextArea 1.0 BasicComponent/Text/TTextArea.qml
-TTextField 1.0 BasicComponent/Text/TTextField.qml
-singleton TConfig 1.0 Config/TConfig.qml
+TToolTip 1.0 BasicComponent/Others/TToolTip.qml
+TPopup 1.0 BasicComponent/Others/TPopup.qml

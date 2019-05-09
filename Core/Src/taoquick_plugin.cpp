@@ -11,7 +11,7 @@ void TaoQuickPlugin::registerTypes(const char *uri)
     qInfo() << " You can find more info about TaoQuick in website:"
             << "\033[0m"
             << "\033[31m"
-            << "https://github.com/wentaojia2014/TaoQuick";
+            << "https://github.com/jaredtao";
 
     qInfo() << "\033[0m\033[32m" << "Good luck to you." << "\033[0m";
 }

@@ -1,7 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
-import "../../Config"
-Rectangle {
+Item {
     id: root
     property url normalUrl
     property url hoveredUrl
@@ -16,10 +15,8 @@ Rectangle {
     property alias imageAnchors: img.anchors
     property alias containsMouse: area.containsMouse
     property alias containsPress: area.containsPress
-    signal click();
+    signal clicked();
 
-    border.color: TConfig.buttonStyle.borderColor
-    border.width: (containsPress || containsMouse) ? 1 : 0
     Image {
         id: img
         anchors.fill: parent
@@ -30,8 +27,9 @@ Rectangle {
         id: area
         anchors.fill: parent;
         hoverEnabled: parent.enabled;
-        onClicked: root.click();
+        onClicked: root.clicked();
         cursorShape: Qt.PointingHandCursor
+        preventStealing: true
     }
 }
 

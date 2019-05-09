@@ -6,18 +6,24 @@ MouseArea {
     property real lastX: 0
     property real lastY: 0
     property bool mask: false
-    signal move(real xOffset, real yOffset)
+    property var control: parent
 
-    cursorShape: Qt.OpenHandCursor
     onPressed: {
         lastX = mouseX;
         lastY = mouseY;
     }
-
+    onContainsMouseChanged: {
+        if (containsMouse) {
+            cursorShape = Qt.SizeAllCursor;
+        } else {
+            cursorShape = Qt.ArrowCursor;
+        }
+    }
     onPositionChanged: {
-        if (!mask && pressed)
+        if (!mask && pressed && control)
         {
-            root.move(mouseX - lastX, mouseY - lastY)
+            control.x +=mouseX - lastX
+            control.y +=mouseY - lastY
         }
     }
 }

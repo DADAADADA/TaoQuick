@@ -1,14 +1,22 @@
 <RCC>
     <qresource prefix="/">
-        <file>Image/logo/logo_color.png</file>
-        <file>Image/logo/logo_flat_transparent.png</file>
-        <file>Image/logo/logo_grayscale_transparent.png</file>
-        <file>Image/logo/logo_transparent.png</file>
-        <file>Image/logo/logo_white_black.png</file>
-        <file>Image/logo/logo_white_color.png</file>
         <file>Image/Button/Button.png</file>
         <file>Image/Button/Button_Disabled.png</file>
         <file>Image/Button/Button_Hovered.png</file>
         <file>Image/Button/Button_Pressed.png</file>
+        <file>Image/logo/milk.png</file>
+        <file>Image/logo/milk.ico</file>
+        <file>Image/Window/close_gray.png</file>
+        <file>Image/Window/close_white.png</file>
+        <file>Image/Window/max_gray.png</file>
+        <file>Image/Window/max_white.png</file>
+        <file>Image/Window/minimal_gray.png</file>
+        <file>Image/Window/minimal_white.png</file>
+        <file>Image/Window/normal_gray.png</file>
+        <file>Image/Window/normal_white.png</file>
+        <file>Image/Window/lang_gray.png</file>
+        <file>Image/Window/lang_white.png</file>
+        <file>Image/Window/skin_gray.png</file>
+        <file>Image/Window/skin_white.png</file>
     </qresource>
 </RCC>

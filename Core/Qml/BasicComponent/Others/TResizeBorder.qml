@@ -3,7 +3,7 @@ import QtQuick.Controls 2.0
 Item {
     //controller 要控制大小的目标，可以是Item，也可以是view，只要提供x、y、width、height等属性的修改
     //默认值为parent
-    property var controller: parent
+    property var control: parent
 
     //左上角的拖拽
     TDragItem {
@@ -11,14 +11,14 @@ Item {
         posType: posLeftTop
         onPosChange: {
             //不要简化这个判断条件，至少让以后维护的人能看懂。我当然知道能化简，化简过几分钟之后我自己都看不懂了。
-            if (controller.x + xOffset < controller.x + controller.width)
-                controller.x += xOffset;
-            if (controller.y + yOffset < controller.y + controller.height)
-                controller.y += yOffset;
-            if (controller.width - xOffset > 0)
-                controller.width-= xOffset;
-            if (controller.height -yOffset > 0)
-                controller.height -= yOffset;
+            if (control.x + xOffset < control.x + control.width)
+                control.x += xOffset;
+            if (control.y + yOffset < control.y + control.height)
+                control.y += yOffset;
+            if (control.width - xOffset > 0)
+                control.width-= xOffset;
+            if (control.height -yOffset > 0)
+                control.height -= yOffset;
         }
     }
     //右上角拖拽
@@ -28,12 +28,12 @@ Item {
         x: parent.width - width
         onPosChange: {
             //向左拖动时，xOffset为负数
-            if (controller.width + xOffset > 0)
-                controller.width += xOffset;
-            if (controller.height - yOffset > 0)
-                controller.height -= yOffset;
-            if (controller.y + yOffset < controller.y + controller.height)
-                controller.y += yOffset;
+            if (control.width + xOffset > 0)
+                control.width += xOffset;
+            if (control.height - yOffset > 0)
+                control.height -= yOffset;
+            if (control.y + yOffset < control.y + control.height)
+                control.y += yOffset;
         }
     }
     //左下角拖拽
@@ -42,12 +42,12 @@ Item {
         posType: posLeftBottom
         y: parent.height - height
         onPosChange: {
-            if (controller.x + xOffset < controller.x + controller.width)
-                controller.x += xOffset;
-            if (controller.width - xOffset > 0)
-                controller.width-= xOffset;
-            if (controller.height + yOffset > 0)
-                controller.height += yOffset;
+            if (control.x + xOffset < control.x + control.width)
+                control.x += xOffset;
+            if (control.width - xOffset > 0)
+                control.width-= xOffset;
+            if (control.height + yOffset > 0)
+                control.height += yOffset;
         }
     }
     //右下角拖拽
@@ -57,10 +57,10 @@ Item {
         x: parent.width - width
         y: parent.height - height
         onPosChange: {
-            if (controller.width + xOffset > 0)
-                controller.width += xOffset;
-            if (controller.height + yOffset > 0)
-                controller.height += yOffset;
+            if (control.width + xOffset > 0)
+                control.width += xOffset;
+            if (control.height + yOffset > 0)
+                control.height += yOffset;
         }
     }
     //上边拖拽
@@ -69,10 +69,10 @@ Item {
         width: parent.width - leftTopHandle.width - rightTopHandle.width
         x: leftBottomHandle.width
         onPosChange: {
-            if (controller.y + yOffset < controller.y + controller.height)
-                controller.y += yOffset;
-            if (controller.height - yOffset > 0)
-                controller.height -= yOffset;
+            if (control.y + yOffset < control.y + control.height)
+                control.y += yOffset;
+            if (control.height - yOffset > 0)
+                control.height -= yOffset;
         }
     }
 
@@ -82,10 +82,10 @@ Item {
         height: parent.height - leftTopHandle.height - leftBottomHandle.height
         y: leftTopHandle.height
         onPosChange: {
-            if (controller.x + xOffset < controller.x + controller.width)
-                controller.x += xOffset;
-            if (controller.width - xOffset > 0)
-                controller.width-= xOffset;
+            if (control.x + xOffset < control.x + control.width)
+                control.x += xOffset;
+            if (control.width - xOffset > 0)
+                control.width-= xOffset;
         }
     }
     //右边拖拽
@@ -95,8 +95,8 @@ Item {
         height: parent.height - rightTopHandle.height - rightBottomHandle.height
         y: rightTopHandle.height
         onPosChange: {
-            if (controller.width + xOffset > 0)
-                controller.width += xOffset;
+            if (control.width + xOffset > 0)
+                control.width += xOffset;
         }
     }
     //下边拖拽
@@ -106,8 +106,8 @@ Item {
         y: parent.height - height
         width: parent.width - leftBottomHandle.width - rightBottomHandle.width
         onPosChange: {
-            if (controller.height + yOffset > 0)
-                controller.height += yOffset;
+            if (control.height + yOffset > 0)
+                control.height += yOffset;
         }
     }
 

@@ -1,3 +1,21 @@
 ﻿module TaoQuick
 plugin TaoQuick
-singleton TConfig 1.0 Config/TConfig.qml
+
+depends QtQuick 2.9
+depends QtQuick.Controls 2.0
+
+TGradientBtn 1.0 BasicComponent/Button/TGradientBtn.qml
+TImageBtn 1.0 BasicComponent/Button/TImageBtn.qml
+TImgTextBtn 1.0 BasicComponent/Button/TImgTextBtn.qml
+TTextBtn 1.0 BasicComponent/Button/TTextBtn.qml
+
+TMoveArea 1.0 BasicComponent/Mouse/TMoveArea.qml
+TTransArea 1.0 BasicComponent/Mouse/TTransArea.qml
+
+TBusyIndicator 1.0 BasicComponent/Others/TBusyIndicator.qml
+TDragItem 1.0 BasicComponent/Others/TDragItem.qml
+TResizeBorder 1.0 BasicComponent/Others/TResizeBorder.qml
+TToolTip 1.0 BasicComponent/Others/TToolTip.qml
+TPopup 1.0 BasicComponent/Others/TPopup.qml
+
+designersupported

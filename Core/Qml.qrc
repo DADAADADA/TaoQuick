@@ -9,10 +9,8 @@
         <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
         <file>Qml/BasicComponent/Others/TDragItem.qml</file>
         <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
-        <file>Qml/BasicComponent/Text/TText.qml</file>
-        <file>Qml/BasicComponent/Text/TTextArea.qml</file>
-        <file>Qml/BasicComponent/Text/TTextField.qml</file>
-        <file>Qml/Config/TConfig.qml</file>
+        <file>Qml/BasicComponent/Others/TToolTip.qml</file>
         <file>Qml/qmldir</file>
+        <file>Qml/BasicComponent/Others/TPopup.qml</file>
     </qresource>
 </RCC>

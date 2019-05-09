@@ -9,7 +9,9 @@ PRECOMPILED_HEADER = Src/stdafx.h
 precompile_header:!isEmpty(PRECOMPILED_HEADER) {
 DEFINES += USING_PCH
 }
-
+win32 {
+    RC_FILE = App.rc
+}
 CONFIG(debug, debug|release) {
     DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/Debug/)
 } else {
@@ -34,9 +36,4 @@ RESOURCES += \
     Qml.qrc \
     Image.qrc
 
-OTHER_FILES += README.md \
-    .clang-format \
-    LICENSE \
-    appveyor.yml \
-    .travis.yml
 TRANSLATIONS += trans_zh.tr
