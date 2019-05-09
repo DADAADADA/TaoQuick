@@ -38,5 +38,8 @@
         <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
         <file>Qml/BasicComponent/Others/TDragItem.qml</file>
         <file>Qml/Contents/CoolComponent/CycleFlow.qml</file>
+        <file>Qml/Contents/FunctionComponent/TabPage.qml</file>
+        <file>Qml/Contents/CoolComponent/AntLine.qml</file>
+        <file>Qml/Contents/CoolComponent/RectMoveLine.qml</file>
     </qresource>
 </RCC>
