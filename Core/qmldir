@@ -1,0 +1,3 @@
+﻿module TaoQuick
+plugin TaoQuick
+singleton TConfig 1.0 Config/TConfig.qml

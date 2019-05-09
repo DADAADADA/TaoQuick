@@ -1,2 +1,0 @@
-#module TaoQuick
-singleton TConfig 1.0 TConfig.qml

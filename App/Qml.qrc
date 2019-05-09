@@ -22,24 +22,10 @@
         <file>Qml/Contents/Welcome/Welcome.qml</file>
         <file>Qml/Contents/CoolComponent/ScrollList.qml</file>
         <file>Qml/ContentData.js</file>
-        <file>Qml/BasicComponent/Button/TGradientBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TImageBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TImgTextBtn.qml</file>
-        <file>Qml/BasicComponent/Button/TTextBtn.qml</file>
-        <file>Qml/BasicComponent/Mouse/TMoveArea.qml</file>
-        <file>Qml/BasicComponent/Mouse/TTransArea.qml</file>
-        <file>Qml/BasicComponent/Others/TBusyIndicator.qml</file>
-        <file>Qml/BasicComponent/Text/TText.qml</file>
-        <file>Qml/BasicComponent/Text/TTextArea.qml</file>
-        <file>Qml/BasicComponent/Text/TTextField.qml</file>
-        <file>Qml/Config/TConfig.qml</file>
-        <file>Qml/Config/qmldir</file>
-        <file>Qml/BasicComponent/qmldir</file>
-        <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
-        <file>Qml/BasicComponent/Others/TDragItem.qml</file>
         <file>Qml/Contents/CoolComponent/CycleFlow.qml</file>
         <file>Qml/Contents/FunctionComponent/TabPage.qml</file>
         <file>Qml/Contents/CoolComponent/AntLine.qml</file>
         <file>Qml/Contents/CoolComponent/RectMoveLine.qml</file>
+        <file>Qml/Contents/CoolComponent/ColorFul.qml</file>
     </qresource>
 </RCC>

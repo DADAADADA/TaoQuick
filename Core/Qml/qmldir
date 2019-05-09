@@ -1,0 +1,18 @@
+﻿#module TaoQuick
+
+TGradientBtn 1.0 BasicComponent/Button/TGradientBtn.qml
+TImageBtn 1.0 BasicComponent/Button/TImageBtn.qml
+TImgTextBtn 1.0 BasicComponent/Button/TImgTextBtn.qml
+TTextBtn 1.0 BasicComponent/Button/TTextBtn.qml
+
+TMoveArea 1.0 BasicComponent/Mouse/TMoveArea.qml
+TTransArea 1.0 BasicComponent/Mouse/TTransArea.qml
+
+TBusyIndicator 1.0 BasicComponent/Others/TBusyIndicator.qml
+TDragItem 1.0 BasicComponent/Others/TDragItem.qml
+TResizeBorder 1.0 BasicComponent/Others/TResizeBorder.qml
+
+TText 1.0 BasicComponent/Text/TText.qml
+TTextArea 1.0 BasicComponent/Text/TTextArea.qml
+TTextField 1.0 BasicComponent/Text/TTextField.qml
+singleton TConfig 1.0 Config/TConfig.qml
