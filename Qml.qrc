@@ -37,5 +37,6 @@
         <file>Qml/BasicComponent/qmldir</file>
         <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
         <file>Qml/BasicComponent/Others/TDragItem.qml</file>
+        <file>Qml/Contents/CoolComponent/CycleFlow.qml</file>
     </qresource>
 </RCC>

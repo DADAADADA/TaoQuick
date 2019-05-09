@@ -36,3 +36,4 @@ OTHER_FILES += README.md \
     LICENSE \
     appveyor.yml \
     .travis.yml
+TRANSLATIONS += trans_zh.tr

@@ -1,4 +1,4 @@
-var contentData = [
+﻿var contentData = [
     { name: qsTr("首页"), title: qsTr("欢迎"), url: "qrc:/Qml/Contents/Welcome/Welcome.qml", children: []},
     {
         name: qsTr("基础组件"), title: qsTr("基础组件"),  children: [
@@ -20,6 +20,7 @@ var contentData = [
     {
         name: qsTr("酷炫组件"), title: qsTr("酷炫组件"),  children: [
             { name: qsTr("滚动列表"), title: qsTr("滚动列表"), url: "qrc:/Qml/Contents/CoolComponent/ScrollList.qml"},
+            { name: qsTr("元素流"), title: qsTr("元素流"), url: "qrc:/Qml/Contents/CoolComponent/CycleFlor.qml"},
             { name: qsTr("能量球"), title: qsTr("能量球"), url: "qrc:/Qml/Contents/CoolComponent/PowerBall.qml"},
             { name: qsTr("暗影之流"), title: qsTr("暗影之流"), url: "qrc:/Qml/Contents/CoolComponent/ArrowFlow.qml"},
             { name: qsTr("烟花漫舞"), title: qsTr("烟花漫舞"), url: "qrc:/Qml/Contents/CoolComponent/FireworksDance.qml"},

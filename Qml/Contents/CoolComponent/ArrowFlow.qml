@@ -1,10 +1,11 @@
-import QtQuick 2.9
-import "qrc:/Tao/Qml/Config"
-import "qrc:/Tao/Qml/BasicComponent/Text"
-import "qrc:/Tao/Qml/BasicComponent/Others"
+﻿import QtQuick 2.9
+import QtQuick.Controls 2.5
+import QtQuick.Particles 2.12
 Item {
-    anchors.fill: parent
-    TBusyIndicator {
-        anchors.centerIn: parent
+//    anchors.fill: parent
+    width: 800
+    height: 600
+    ParticleSystem {
+        id: sys
     }
 }
