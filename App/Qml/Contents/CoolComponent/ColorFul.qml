@@ -23,6 +23,7 @@ Item {
             }
         }
     }
+
     Rectangle {
         y: 300
         width: 80

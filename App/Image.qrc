@@ -18,5 +18,6 @@
         <file>Image/Window/lang_white.png</file>
         <file>Image/Window/skin_gray.png</file>
         <file>Image/Window/skin_white.png</file>
+        <file>Image/logo/splash.gif</file>
     </qresource>
 </RCC>

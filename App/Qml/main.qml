@@ -1,52 +1,42 @@
 ﻿import QtQuick 2.9
 import QtQuick.Controls 2.0
 
-import TaoQuick 1.0
-import "qrc:/Tao/Qml"
 
 import "./Page"
-import "./ContentData.js" as ContentData
+
 
 Item {
     id: root
     width: 1024
     height: 768
-    QtObject {
-        id: gConfig
-        property color titleBackground: "#c62f2f"
-        property color background: "#ccced0"
-    }
 
-    TitlePage {
-        id: titleRect
-        width: root.width
-        height: 60
-        color: gConfig.titleBackground
-        TMoveArea {
-            height: parent.height
-            anchors {
-                left: parent.left
-                right: parent.right
-                rightMargin: 170
-            }
-            control: view
-        }
-    }
-    TResizeBorder {
-        control: view
+    Splash {
+        id: splash
         anchors.fill: parent
     }
-    ContentPage {
-        id: contentRect
-        width: parent.width
-        color: gConfig.background
-        anchors.top: titleRect.bottom
-        anchors.bottom: parent.bottom
-        TBusyIndicator {
-            anchors.centerIn: parent
+    Loader {
+        id: loader
+        source: "qrc:/Qml/Page/MainPage.qml"
+        asynchronous: true
+        opacity: 0
+        anchors.fill: parent
+        Behavior on opacity {
+            NumberAnimation { duration: 600 }
+        }
+        onLoaded: {
+            timer.start()
+//            opacity = 1
+//            splash.visible = false
         }
     }
-    NotifyBox {
-        id: notifyBox
+    Timer {
+        id: timer
+        interval: 600
+        repeat: false
+        triggeredOnStart: false
+        onTriggered: {
+            loader.opacity = 1
+            splash.visible = false
+        }
     }
 }

@@ -28,5 +28,7 @@
         <file>Qml/Contents/CoolComponent/RectMoveLine.qml</file>
         <file>Qml/Contents/CoolComponent/ColorFul.qml</file>
         <file>Qml/Page/NotifyBox.qml</file>
+        <file>Qml/Splash.qml</file>
+        <file>Qml/Page/MainPage.qml</file>
     </qresource>
 </RCC>
