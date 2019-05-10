@@ -1,7 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
-import "../../Config"
-import "../Text"
+
 Item {
     id: root
     property alias textItem: t
@@ -17,7 +16,7 @@ Item {
         id: hoverRect
         anchors.fill: parent
         visible: root.containsMouse || root.containsPress
-        color: Qt.lighter(TConfig.gray)
+        color: Qt.lighter("gray")
         radius: 5
         clip: true
         Rectangle {
@@ -31,7 +30,7 @@ Item {
             width: radius * 2
             height: radius * 2
             visible: radius > 0
-            color: TConfig.gray
+            color: "gray"
 
             SequentialAnimation {
                 id: pressAnimation
@@ -51,7 +50,7 @@ Item {
         }
     }
 
-    TText {
+    Text {
         id: t
         anchors.centerIn: parent
         width: parent.width

@@ -25,8 +25,6 @@ Item {
         }
         onLoaded: {
             timer.start()
-//            opacity = 1
-//            splash.visible = false
         }
     }
     Timer {

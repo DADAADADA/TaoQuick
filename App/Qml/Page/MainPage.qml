@@ -3,13 +3,13 @@
 import TaoQuick 1.0
 import "qrc:/Tao/Qml"
 
-import "../ContentData.js" as ContentData
 
 Item {
     QtObject {
         id: gConfig
         property color titleBackground: "#c62f2f"
-        property color background: "#ccced0"
+        property color background: "#ffffff"
+        property color textColor: "black"
     }
     TitlePage {
         id: titleRect
@@ -36,9 +36,6 @@ Item {
         color: gConfig.background
         anchors.top: titleRect.bottom
         anchors.bottom: parent.bottom
-        TBusyIndicator {
-            anchors.centerIn: parent
-        }
     }
     NotifyBox {
         id: notifyBox

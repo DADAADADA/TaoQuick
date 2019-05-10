@@ -1,8 +1,8 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
-import "qrc:/Tao/Qml/Config"
-import "qrc:/Tao/Qml/BasicComponent/Text"
-import "qrc:/Tao/Qml/BasicComponent/Button"
+import "qrc:/Tao/Qml/"
+import "qrc:/Tao/Qml/"
+import "qrc:/Tao/Qml/"
 ListView {
     id: root
     anchors.fill: parent
@@ -38,7 +38,7 @@ ListView {
             text: model.name
             textItem.leftPadding: 6
             textHorizontalAlignment: Text.AlignLeft
-            textColor: text === currentTitle ? TConfig.darkGreen : TConfig.textStyle.normalColor
+            textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
             onClick: {
                 if (model.url)
                 {
@@ -65,6 +65,7 @@ ListView {
         ListView {
             id: subListView
             visible: false
+            x: 20
             y: rowHeight
             width: root.width
             height: count * rowHeight
@@ -73,7 +74,7 @@ ListView {
                 width: root.width
                 height: rowHeight
                 text: model.name
-                textColor: text === currentTitle ? TConfig.darkGreen : TConfig.textStyle.normalColor
+                textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
                 onClick: {
                     currentTitle = model.name
                     currentUrl = model.url

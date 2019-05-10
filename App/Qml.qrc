@@ -8,7 +8,6 @@
         <file>Qml/Contents/BaseComponent/DropDowns.qml</file>
         <file>Qml/Contents/BaseComponent/Progresses.qml</file>
         <file>Qml/Contents/BaseComponent/Tabs.qml</file>
-        <file>Qml/Contents/BaseComponent/Texts.qml</file>
         <file>Qml/Contents/CoolComponent/ArrowFlow.qml</file>
         <file>Qml/Contents/CoolComponent/FireworksDance.qml</file>
         <file>Qml/Contents/CoolComponent/HalleyComet.qml</file>

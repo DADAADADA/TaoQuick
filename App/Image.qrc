@@ -1,9 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>Image/Button/Button.png</file>
-        <file>Image/Button/Button_Disabled.png</file>
-        <file>Image/Button/Button_Hovered.png</file>
-        <file>Image/Button/Button_Pressed.png</file>
         <file>Image/logo/milk.png</file>
         <file>Image/logo/milk.ico</file>
         <file>Image/Window/close_gray.png</file>
@@ -19,5 +15,8 @@
         <file>Image/Window/skin_gray.png</file>
         <file>Image/Window/skin_white.png</file>
         <file>Image/logo/splash.gif</file>
+        <file>Image/Button/cry-fill.png</file>
+        <file>Image/Button/smile-fill.png</file>
+        <file>Image/Button/smile-fill-hover.png</file>
     </qresource>
 </RCC>
