@@ -7,3 +7,4 @@ OTHER_FILES += README.md \
     LICENSE \
     appveyor.yml \
     .travis.yml    
+

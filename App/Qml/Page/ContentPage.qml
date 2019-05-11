@@ -1,5 +1,5 @@
 import QtQuick 2.9
-import "../ContentData.js" as ContentData
+import "../"
 Rectangle {
     id: root
     Rectangle {
@@ -42,7 +42,7 @@ Rectangle {
         }
         Text {
             id: titlePage
-            text: menuPage.currentTitle
+            text: qsTr(menuPage.currentTitle)
             anchors.centerIn: parent
             font.pixelSize: 26
             color: gConfig.titleBackground
@@ -61,7 +61,7 @@ Rectangle {
             anchors.fill: parent
             Component.onCompleted: {
                 //load contentData from js
-                freshData(ContentData.contentData);
+                freshData(gData.contentData);
             }
         }
     }

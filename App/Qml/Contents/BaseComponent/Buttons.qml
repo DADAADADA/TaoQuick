@@ -173,31 +173,5 @@ Item {
                 console.log("你按下了图片按钮")
             }
         }
-        //        TImgTextBtn {
-        //            width: 100
-        //            height: 48
-        //            normalUrl: "qrc:/Image/Button/Button.png"
-        //            hoveredUrl: "qrc:/Image/Button/Button_Hovered.png"
-        //            pressedUrl: "qrc:/Image/Button/Button_Pressed.png"
-        //            disabledUrl: "qrc:/Image/Button/Button_Disabled.png"
-        //            text: qsTr("按钮")
-        //            color: "cyan"
-        //            onClicked: {
-        //                console.log("你按下了图片+文字按钮")
-        //            }
-        //        }
-        //        TImgTextBtn {
-        //            width: 100
-        //            height: 48
-        //            normalUrl: "qrc:/Image/Button/Button.png"
-        //            hoveredUrl: "qrc:/Image/Button/Button_Hovered.png"
-        //            pressedUrl: "qrc:/Image/Button/Button_Pressed.png"
-        //            disabledUrl: "qrc:/Image/Button/Button_Disabled.png"
-        //            text: qsTr("按钮")
-        //            color: "cyan"
-        //            onClicked: {
-        //                console.log("你按下了图片+文字按钮")
-        //            }
-        //        }
     }
 }

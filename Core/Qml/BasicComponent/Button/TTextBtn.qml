@@ -18,6 +18,7 @@ Rectangle {
         horizontalAlignment: Text.AlignHCenter
         //默认宽度为parent的宽度，这样字太长超出范围时自动显示省略号
         width: parent.width
+        elide: Text.ElideRight
     }
 
     MouseArea {

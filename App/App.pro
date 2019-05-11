@@ -36,4 +36,4 @@ RESOURCES += \
     Qml.qrc \
     Image.qrc
 
-TRANSLATIONS += trans_zh.tr
+TRANSLATIONS += trans_zh.qs trans_en.qs

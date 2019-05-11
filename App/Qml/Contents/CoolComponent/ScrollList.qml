@@ -1,6 +1,5 @@
 ﻿import QtQuick 2.9
-import "qrc:/Tao/Qml/Config"
-import "qrc:/Tao/Qml/BasicComponent/Text"
+import "qrc:/Tao/Qml/"
 Item {
 
     ListView {
@@ -20,7 +19,7 @@ Item {
                 width: parent.width
                 height: parent.height
                 color: TConfig.lightBlue
-                TText {
+                Text {
                     anchors.centerIn: parent
                     text: modelData
                 }

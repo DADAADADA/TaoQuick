@@ -20,7 +20,6 @@
         <file>Qml/Contents/FunctionComponent/QRCode.qml</file>
         <file>Qml/Contents/Welcome/Welcome.qml</file>
         <file>Qml/Contents/CoolComponent/ScrollList.qml</file>
-        <file>Qml/ContentData.js</file>
         <file>Qml/Contents/CoolComponent/CycleFlow.qml</file>
         <file>Qml/Contents/FunctionComponent/TabPage.qml</file>
         <file>Qml/Contents/CoolComponent/AntLine.qml</file>
@@ -31,5 +30,6 @@
         <file>Qml/Page/MainPage.qml</file>
         <file>Qml/Contents/CoolComponent/MovedItem.qml</file>
         <file>Qml/Contents/BaseComponent/Drags.qml</file>
+        <file>Qml/Page/ContentData.qml</file>
     </qresource>
 </RCC>

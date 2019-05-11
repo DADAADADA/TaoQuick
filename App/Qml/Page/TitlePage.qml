@@ -113,12 +113,60 @@ Rectangle {
             imageUrl: containsMouse ? "qrc:/Image/Window/lang_white.png" : "qrc:/Image/Window/lang_gray.png"
             onClicked: {
                 notifyBox.notify("change language")
-                tip.tipVisible = true
+                pop.show()
             }
-            TToolTip {
-                id: tip
-                text: "Hello"
+            TPopup {
+                id: pop
+                barColor: "white"
+                borderColor: "gray"
+                backgroundWidth: 100
+                backgroundHeight: 80
+                contentItem: ListView {
+                    id: langListView
+                    anchors.fill: parent
+                    anchors.margins: 2
+                    model: ["中文简体", "English"]
+                    delegate: TTextBtn {
+                        width: langListView.width
+                        height: 36
+                        text: modelData
+                        color: containsMouse ? "lightgray" : pop.barColor
+                        onClicked: {
+                            pop.hide()
+                            view.reTrans(modelData)
+                        }
+                    }
+                }
             }
+//            Item {
+//                id: bar
+//                anchors.fill: parent
+//                property color barColor: "#eea2a4"
+//                Rectangle {
+//                    color: bar.barColor
+//                    width: 16
+//                    height: 16
+//                    rotation: 45
+//                    visible: pop.visible
+//                    anchors.horizontalCenter: parent.horizontalCenter
+//                    anchors.verticalCenter: parent.bottom
+//                    anchors.verticalCenterOffset: 20
+//                }
+//                Popup {
+//                    id: pop
+//                    x: (bar.width - width) / 2
+//                    y: bar.height + 20
+//                    width: 200
+//                    height: 160
+//                    background: Rectangle {
+//                        color: bar.barColor
+//                    }
+//                }
+//            }
+//            TToolTip {
+//                id: tip
+//                text: "Hello"
+//            }
         }
     }
     //    ListModel {

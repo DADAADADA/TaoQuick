@@ -1,8 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
 import "qrc:/Tao/Qml/"
-import "qrc:/Tao/Qml/"
-import "qrc:/Tao/Qml/"
 ListView {
     id: root
     anchors.fill: parent
@@ -35,7 +33,7 @@ ListView {
             id: btn
             width: root.width
             height: rowHeight
-            text: model.name
+            text: qsTr(model.name)
             textItem.leftPadding: 6
             textHorizontalAlignment: Text.AlignLeft
             textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
@@ -73,7 +71,7 @@ ListView {
             delegate: TGradientBtn {
                 width: root.width
                 height: rowHeight
-                text: model.name
+                text: qsTr(model.name)
                 textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
                 onClick: {
                     currentTitle = model.name

@@ -3,13 +3,15 @@
 import TaoQuick 1.0
 import "qrc:/Tao/Qml"
 
-
 Item {
     QtObject {
         id: gConfig
         property color titleBackground: "#c62f2f"
         property color background: "#ffffff"
         property color textColor: "black"
+    }
+    ContentData {
+        id: gData
     }
     TitlePage {
         id: titleRect

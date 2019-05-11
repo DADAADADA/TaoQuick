@@ -16,7 +16,7 @@ Rectangle {
     }
     SequentialAnimation {
         id: ani
-
+        alwaysRunToEnd: false
         NumberAnimation {
             target: root
             property: "y"
