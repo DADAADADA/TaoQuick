@@ -1,10 +1,11 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.0
+import "../.."
 Item {
+    id: root
     //controller 要控制大小的目标，可以是Item，也可以是view，只要提供x、y、width、height等属性的修改
     //默认值为parent
     property var control: parent
-
     //左上角的拖拽
     TDragItem {
         id: leftTopHandle

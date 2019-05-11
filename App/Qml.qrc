@@ -29,5 +29,7 @@
         <file>Qml/Page/NotifyBox.qml</file>
         <file>Qml/Splash.qml</file>
         <file>Qml/Page/MainPage.qml</file>
+        <file>Qml/Contents/CoolComponent/MovedItem.qml</file>
+        <file>Qml/Contents/BaseComponent/Drags.qml</file>
     </qresource>
 </RCC>

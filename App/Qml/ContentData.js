@@ -3,6 +3,7 @@
     {
         name: qsTr("基础组件"), title: qsTr("基础组件"),  children: [
             { name: qsTr("按钮组件"), title: qsTr("按钮组件"), url: "qrc:/Qml/Contents/BaseComponent/Buttons.qml"},
+            { name: qsTr("拖动组件"), title: qsTr("拖动组件"), url: "qrc:/Qml/Contents/BaseComponent/Drags.qml"},
             { name: qsTr("下拉组件"), title: qsTr("下拉组件"), url: "qrc:/Qml/Contents/BaseComponent/DropDowns.qml"},
             { name: qsTr("标签页组件"), title: qsTr("标签页组件"), url: "qrc:/Qml/Contents/BaseComponent/Tabs.qml"},
             { name: qsTr("进度条组件"), title: qsTr("进度条组件"), url: "qrc:/Qml/Contents/BaseComponent/Progresses.qml"},
