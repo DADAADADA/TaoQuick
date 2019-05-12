@@ -37,113 +37,148 @@
 <context>
     <name>ContentData</name>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="3"/>
-        <source>首页</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="3"/>
-        <source>欢迎</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="5"/>
-        <source>基础组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="6"/>
-        <source>按钮组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="7"/>
-        <source>拖动组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="8"/>
-        <source>下拉组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="9"/>
-        <source>标签页组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="10"/>
-        <source>进度条组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="14"/>
-        <source>功能组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="15"/>
-        <source>徽章</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="16"/>
-        <source>二维码</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="17"/>
-        <location filename="Qml/Page/ContentData.qml" line="18"/>
-        <source>IP地址</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="18"/>
-        <source>弹幕</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="22"/>
-        <source>酷炫组件</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="23"/>
-        <source>滚动列表</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="Qml/Page/ContentData.qml" line="24"/>
-        <source>元素流</source>
+        <location filename="Qml/Page/ContentData.qml" line="19"/>
+        <source>一品红</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="Qml/Page/ContentData.qml" line="25"/>
+        <source>高冷黑</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="31"/>
+        <source>淑女粉</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="37"/>
+        <source>富贵金</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="43"/>
+        <source> 清爽绿</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="49"/>
+        <source>苍穹蓝</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="57"/>
+        <source>首页</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="57"/>
+        <source>欢迎</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="59"/>
+        <source>基础组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="60"/>
+        <source>按钮组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="61"/>
+        <source>拖动组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="62"/>
+        <source>渐变</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="63"/>
+        <source>下拉组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="64"/>
+        <source>标签页组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="65"/>
+        <source>进度条组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="69"/>
+        <source>功能组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="70"/>
+        <source>徽章</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="71"/>
+        <source>二维码</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="72"/>
+        <location filename="Qml/Page/ContentData.qml" line="73"/>
+        <source>IP地址</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="73"/>
+        <source>弹幕</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="77"/>
+        <source>酷炫组件</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="78"/>
+        <source>滚动列表</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="79"/>
+        <source>元素流</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="Qml/Page/ContentData.qml" line="80"/>
         <source>能量球</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="26"/>
+        <location filename="Qml/Page/ContentData.qml" line="81"/>
         <source>暗影之流</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="27"/>
+        <location filename="Qml/Page/ContentData.qml" line="82"/>
         <source>烟花漫舞</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="28"/>
+        <location filename="Qml/Page/ContentData.qml" line="83"/>
         <source>哈雷彗星</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="29"/>
+        <location filename="Qml/Page/ContentData.qml" line="84"/>
         <source>焰之欢愉</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Qml/Page/ContentData.qml" line="30"/>
+        <location filename="Qml/Page/ContentData.qml" line="85"/>
         <source>霜之哀伤</source>
         <translation type="unfinished"></translation>
     </message>

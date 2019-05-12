@@ -31,5 +31,6 @@
         <file>Qml/Contents/CoolComponent/MovedItem.qml</file>
         <file>Qml/Contents/BaseComponent/Drags.qml</file>
         <file>Qml/Page/ContentData.qml</file>
+        <file>Qml/Contents/BaseComponent/Gradiants.qml</file>
     </qresource>
 </RCC>

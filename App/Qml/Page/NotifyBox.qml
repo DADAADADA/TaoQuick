@@ -8,7 +8,7 @@ Rectangle {
     property var control: parent
     x: control.width * 0.7
     y: control.height * 1.1
-    color: "lightgray"
+    color: gConfig.reserverColor
     opacity: 0.7
     Text {
         id: t

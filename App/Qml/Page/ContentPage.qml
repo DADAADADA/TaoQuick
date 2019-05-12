@@ -7,7 +7,7 @@ Rectangle {
         height: 1
         y: parent.height / 8
         x: 1
-        color: "gray"
+        color: gConfig.splitColor
     }
     Rectangle {
         id: hLine
@@ -15,7 +15,7 @@ Rectangle {
         height: parent.height - 2
         y: 1
         x: parent.width / 4
-        color: "gray"
+        color: gConfig.splitColor
     }
     Item {
         id: logoFrame
@@ -58,9 +58,7 @@ Rectangle {
         MenuPage {
             id: menuPage
             anchors.fill: parent
-            Component.onCompleted: {
-                model = gData
-            }
+            model:gConfig.contentData
         }
     }
     Item {

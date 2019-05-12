@@ -5,7 +5,7 @@
 #include <QGuiApplication>
 #include <QQmlContext>
 #include <QQmlEngine>
-
+#include <QGradient>
 #include <QDebug>
 int main(int argc, char **argv)
 {
