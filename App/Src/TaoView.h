@@ -10,7 +10,7 @@ class TaoView : public QQuickView
 public:
     explicit TaoView(QWindow *parent = nullptr);
     Q_INVOKABLE void reTrans(const QString &lang);
-    QStringList languageList() const
+    const QStringList &languageList() const
     {
         return m_languageList;
     }
