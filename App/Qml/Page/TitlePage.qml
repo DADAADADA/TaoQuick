@@ -117,8 +117,7 @@ Rectangle {
             }
             TPopup {
                 id: pop
-                barColor: "white"
-                borderColor: "gray"
+                barColor: "lightblue"
                 backgroundWidth: 100
                 backgroundHeight: 80
                 contentItem: ListView {

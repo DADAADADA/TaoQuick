@@ -34,4 +34,5 @@ void TaoView::reTrans(const QString &lang)
         QCoreApplication::installTranslator(&m_enTrans);
         engine()->retranslate();
     }
+    emit reTransed();
 }

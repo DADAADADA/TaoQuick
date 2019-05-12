@@ -8,19 +8,26 @@ ListView {
     property string currentUrl
     property int rowHeight: 40
     clip: true
-    model: ListModel {
-        id: dataModel
+    onModelChanged: {
+        var f = model.get(0)
+        currentTitle = f.name
+        currentUrl = f.url
+        mainIndex = 0
     }
-    function freshData(data) {
-        dataModel.clear()
-        for (var i = 0; i < data.length; ++i)
-        {
-            dataModel.append(data[i])
+    property var mainIndex: -1
+    property var subIndex: -1
+    Connections{
+        target: view
+        onReTransed: {
+            var m = model.get(mainIndex)
+            if (subIndex != -1) {
+                var s = m.children.get(subIndex)
+                currentTitle = s.name
+            } else {
+                currentTitle = m.name
+            }
         }
-        currentTitle = data[0].name
-        currentUrl = data[0].url
     }
-
     delegate: Item {
         id: delegateItem
         width: root.width
@@ -33,7 +40,7 @@ ListView {
             id: btn
             width: root.width
             height: rowHeight
-            text: qsTr(model.name)
+            text: model.name
             textItem.leftPadding: 6
             textHorizontalAlignment: Text.AlignLeft
             textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
@@ -57,7 +64,8 @@ ListView {
                         subListView.visible = true
                     }
                 }
-
+                mainIndex = index
+                subIndex = -1
             }
         }
         ListView {
@@ -71,11 +79,12 @@ ListView {
             delegate: TGradientBtn {
                 width: root.width
                 height: rowHeight
-                text: qsTr(model.name)
+                text: model.name
                 textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
                 onClick: {
                     currentTitle = model.name
                     currentUrl = model.url
+                    subIndex = index
                 }
             }
         }

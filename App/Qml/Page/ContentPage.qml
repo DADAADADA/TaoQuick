@@ -1,5 +1,4 @@
 import QtQuick 2.9
-import "../"
 Rectangle {
     id: root
     Rectangle {
@@ -41,7 +40,7 @@ Rectangle {
             bottom: vLine.top
         }
         Text {
-            id: titlePage
+            id: titleText
             text: qsTr(menuPage.currentTitle)
             anchors.centerIn: parent
             font.pixelSize: 26
@@ -60,8 +59,7 @@ Rectangle {
             id: menuPage
             anchors.fill: parent
             Component.onCompleted: {
-                //load contentData from js
-                freshData(gData.contentData);
+                model = gData
             }
         }
     }
