@@ -13,3 +13,5 @@ TDragItem 1.0 BasicComponent/Others/TDragItem.qml
 TResizeBorder 1.0 BasicComponent/Others/TResizeBorder.qml
 TToolTip 1.0 BasicComponent/Others/TToolTip.qml
 TPopup 1.0 BasicComponent/Others/TPopup.qml
+TNormalProgress 1.0 BasicComponent/Progress/TNormalProgress.qml
+TCircleProgress 1.0 BasicComponent/Progress/TCircleProgress.qml

@@ -11,6 +11,7 @@ SOURCES += \
         Src/taoquick_plugin.cpp
 
 RESOURCES += \
+    Image.qrc \
     Qml.qrc
 
 CONFIG(debug, debug|release) {

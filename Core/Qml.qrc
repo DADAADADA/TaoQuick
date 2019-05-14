@@ -12,5 +12,7 @@
         <file>Qml/BasicComponent/Others/TToolTip.qml</file>
         <file>Qml/qmldir</file>
         <file>Qml/BasicComponent/Others/TPopup.qml</file>
+        <file>Qml/BasicComponent/Progress/TNormalProgress.qml</file>
+        <file>Qml/BasicComponent/Progress/TCircleProgress.qml</file>
     </qresource>
 </RCC>

@@ -23,8 +23,8 @@ QtObject {
         }
         ListElement {
             name: qsTr("高冷黑")
-            titleBackground: "#191b1f"
-            background: "#222225"
+            titleBackground: "#222225"
+            background: "#272c25"
             textColor: "#adafb2"
         }
         ListElement {
