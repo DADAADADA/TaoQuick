@@ -1,7 +1,10 @@
 TEMPLATE = subdirs
 SUBDIRS += \
-    App \
-    Core
+    Core \
+    App
+
+CONFIG += ordered
+
 OTHER_FILES += README.md \
     .clang-format \
     LICENSE \

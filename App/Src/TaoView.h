@@ -3,6 +3,8 @@
 #include <QQuickView>
 #include <memory>
 
+class QTranslator;
+
 class TaoView : public QQuickView
 {
     Q_OBJECT

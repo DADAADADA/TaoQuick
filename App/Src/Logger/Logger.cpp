@@ -84,7 +84,7 @@ static void outputMessage(QtMsgType type, const QMessageLogContext &context, con
     ::OutputDebugString(message.toStdWString().data());
     ::OutputDebugString(L"\r\n");
 #else
-    fprintf(stderr, message.toStdString().data());
+    fprintf_s(stderr, "%s\n", message.toStdString().data());
 #endif
 }
 } // namespace Logger
