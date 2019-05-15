@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = TaoQuick
+TARGET = TaoQuickDemo
 QT += qml quick
 CONFIG += plugin c++11
 
