@@ -1,4 +1,4 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
 import QtQuick.Controls 2.0
 import "qrc:/Tao/Qml/"
 ListView {
@@ -16,18 +16,18 @@ ListView {
     }
     property var mainIndex: -1
     property var subIndex: -1
-//    Connections{
-//        target: view
-//        onReTransed: {
-//            var m = model.get(mainIndex)
-//            if (subIndex != -1) {
-//                var s = m.children.get(subIndex)
-//                currentTitle = s.name
-//            } else {
-//                currentTitle = m.name
-//            }
-//        }
-//    }
+    Connections{
+        target: view
+        onReTransed: {
+            var m = model.get(mainIndex)
+            if (subIndex != -1) {
+                var s = m.children.get(subIndex)
+                currentTitle = s.name
+            } else {
+                currentTitle = m.name
+            }
+        }
+    }
     delegate: Item {
         id: delegateItem
         width: root.width

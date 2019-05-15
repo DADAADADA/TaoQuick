@@ -1,4 +1,4 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
 import QtQuick.Controls 2.5
 
 import "qrc:/Tao/Qml/"
@@ -14,6 +14,7 @@ Item {
         cellHeight: 160
         model: 180
         clip: true
+        property var invalidList: [27, 39, 40, 45, 71, 74, 105, 111, 119, 130, 135, 141]
         delegate: Item{
             width: 160
             height: 160
@@ -33,7 +34,7 @@ Item {
                     width: 100
                     height: width
                     radius:  width / 2
-                    gradient: modelData
+                    gradient: g.invalidList.indexOf(modelData + 1) < 0 ? modelData + 1 : null
                     anchors.centerIn: parent
                     anchors.verticalCenterOffset: 10
                 }
