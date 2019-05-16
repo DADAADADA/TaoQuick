@@ -13,8 +13,8 @@
 | :---------------: | :-----------------: | :-----------------:|:-----------------: |:-----------------: |
 | ![lin-badge]      | ![win-badge]        | ![license-badge] |![release-badge] | ![download-badge]|
 
-[lin-badge]: https://travis-ci.org/jaredtao/TaoQuick.svg?branch=master "Travis build status"
-[lin-link]: https://travis-ci.org/jaredtao/TaoQuick "Travis build status"
+[lin-badge]: https://travis-ci.com/jaredtao/TaoQuick.svg?branch=master "Travis build status"
+[lin-link]: https://travis-ci.com/jaredtao/TaoQuick "Travis build status"
 [win-badge]: https://ci.appveyor.com/api/projects/status/ontim37g33hvfv72?svg=true "AppVeyor build status"
 [win-link]: https://ci.appveyor.com/project/jiawentao/TaoQuick "AppVeyor build status"
 [release-link]: https://github.com/jaredtao/TableEdit/releases "Release status"
