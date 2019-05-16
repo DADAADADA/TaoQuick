@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = TaoQuickDemo
 QT += qml quick
-CONFIG += plugin c++11 qtquickcompiler
+CONFIG += plugin c++1z qtquickcompiler
 
 #msvc{
 #    QMAKE_CFLAGS += -source-charset:utf-8
@@ -17,7 +17,10 @@ win32 {
     RC_FILE = App.rc
 }
 DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/)
-
+MOC_DIR = build/moc
+RCC_DIR = build/rcc
+UI_DIR = build/ui
+OBJECTS_DIR = build/obj
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML2_IMPORT_PATH =
 

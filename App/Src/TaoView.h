@@ -4,7 +4,7 @@
 
 #include <QQuickView>
 #include <memory>
-
+#include <QPluginLoader>
 class QTranslator;
 
 class TaoView : public QQuickView
