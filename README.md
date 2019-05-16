@@ -8,16 +8,21 @@
 
 ## Build status
 
-| [Linux][lin-link] | [Windows][win-link] |
-| :---------------: | :-----------------: |
-| ![lin-badge]      | ![win-badge]        |
+## Build status
+| [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[License][license-link] | [Release][release-link]|[Download][download-link]|
+| :---------------: | :-----------------: | :-----------------:|:-----------------: |:-----------------: |
+| ![lin-badge]      | ![win-badge]        | ![license-badge] |![release-badge] | ![download-badge]|
 
-[lin-badge]: https://travis-ci.com/jaredtao/TaoQuick.svg?token=GjdPVzNHHi6qs4YDWtkA&branch=master "Travis build status"
-[lin-link]: https://travis-ci.com/jaredtao/TaoQuick "Travis build status"
+[lin-badge]: https://travis-ci.org/jaredtao/TaoQuick.svg?branch=master "Travis build status"
+[lin-link]: https://travis-ci.org/jaredtao/TaoQuick "Travis build status"
 [win-badge]: https://ci.appveyor.com/api/projects/status/ontim37g33hvfv72?svg=true "AppVeyor build status"
-[win-link]: https://ci.appveyor.com/project/jaredtao/TaoQuick "AppVeyor build status"
-## License
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaredtao/TaoQuick/blob/master/LICENSE)
+[win-link]: https://ci.appveyor.com/project/jiawentao/TaoQuick "AppVeyor build status"
+[release-link]: https://github.com/jaredtao/TableEdit/releases "Release status"
+[release-badge]: https://img.shields.io/github/release/jaredtao/TaoQuick.svg?style=flat-square" "Release status"
+[download-link]: https://github.com/jaredtao/TaoQuick/releases/latest "Download status"
+[download-badge]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/total.svg?style=flat-square "Download status"
+[license-link]: https://github.com/jaredtao/TaoQuick/blob/master/LICENSE "LICENSE"
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg "MIT"
 
 ## 效果预览
 ### 启动界面
@@ -48,12 +53,16 @@
 
 ![](Preview/ProgressBar.gif)
 
-## 代码结构
 
+## 特别说明
+
+项目包含插件加载机制，方便后续开发一些高级功能插件。
+
+高级功能插件不开源，收取一定费用，需要的请联系我。
 
 ## 开发环境
 
-* Qt 5.9.8 Windows
+* Qt 5.12.x Windows
 
 ### 联系方式:
 
