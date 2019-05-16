@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = TaoQuickDemo
 QT += qml quick
-CONFIG += plugin c++1z qtquickcompiler
+CONFIG += plugin c++14 qtquickcompiler
 
 #msvc{
 #    QMAKE_CFLAGS += -source-charset:utf-8
@@ -56,7 +56,7 @@ TRANSLATIONS += \
     trans/trans_ar.qs
 
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
-    copy_qm.target = copyqm
+    copy_qm.target = $$DESTDIR/copyqm
     copy_qm.depends = $${_PRO_FILE_PWD_}/trans/*.qm
     tgt = $$DESTDIR
     win32 {
