@@ -5,32 +5,13 @@
         <file>Qml/Page/ContentPage.qml</file>
         <file>Qml/Page/TitlePage.qml</file>
         <file>Qml/Contents/BaseComponent/Buttons.qml</file>
-        <file>Qml/Contents/BaseComponent/DropDowns.qml</file>
         <file>Qml/Contents/BaseComponent/Progresses.qml</file>
-        <file>Qml/Contents/BaseComponent/Tabs.qml</file>
-        <file>Qml/Contents/CoolComponent/ArrowFlow.qml</file>
-        <file>Qml/Contents/CoolComponent/FireworksDance.qml</file>
-        <file>Qml/Contents/CoolComponent/HalleyComet.qml</file>
-        <file>Qml/Contents/CoolComponent/HappyFlame.qml</file>
-        <file>Qml/Contents/CoolComponent/PowerBall.qml</file>
-        <file>Qml/Contents/CoolComponent/SadFrost.qml</file>
-        <file>Qml/Contents/FunctionComponent/Badge.qml</file>
-        <file>Qml/Contents/FunctionComponent/Barrage.qml</file>
-        <file>Qml/Contents/FunctionComponent/IPAddress.qml</file>
-        <file>Qml/Contents/FunctionComponent/QRCode.qml</file>
-        <file>Qml/Contents/Welcome/Welcome.qml</file>
-        <file>Qml/Contents/CoolComponent/ScrollList.qml</file>
-        <file>Qml/Contents/CoolComponent/CycleFlow.qml</file>
-        <file>Qml/Contents/FunctionComponent/TabPage.qml</file>
-        <file>Qml/Contents/CoolComponent/AntLine.qml</file>
-        <file>Qml/Contents/CoolComponent/RectMoveLine.qml</file>
-        <file>Qml/Contents/CoolComponent/ColorFul.qml</file>
         <file>Qml/Page/NotifyBox.qml</file>
         <file>Qml/Splash.qml</file>
         <file>Qml/Page/MainPage.qml</file>
-        <file>Qml/Contents/CoolComponent/MovedItem.qml</file>
         <file>Qml/Contents/BaseComponent/Drags.qml</file>
         <file>Qml/Page/ContentData.qml</file>
         <file>Qml/Contents/BaseComponent/Gradiants.qml</file>
+        <file>Qml/Contents/Welcome/Welcome.qml</file>
     </qresource>
 </RCC>

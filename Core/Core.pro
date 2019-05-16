@@ -14,11 +14,7 @@ RESOURCES += \
     Image.qrc \
     Qml.qrc
 
-CONFIG(debug, debug|release) {
-    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/Debug/$${uri})
-} else {
-    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/Release/$${uri})
-}
+DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/$${uri})
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML2_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml

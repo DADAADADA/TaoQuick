@@ -1,12 +1,12 @@
-﻿#include "stdafx.h"
-
-#include "TaoView.h"
+﻿#include "TaoView.h"
 #include "Logger/Logger.h"
 #include <QGuiApplication>
 #include <QQmlContext>
 #include <QQmlEngine>
 #include <QGradient>
 #include <QDebug>
+
+
 int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);

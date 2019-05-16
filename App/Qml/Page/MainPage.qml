@@ -6,6 +6,24 @@ import "qrc:/Tao/Qml"
 Item {
     ContentData {
         id: gConfig
+        objectName: "gConfig"
+    }
+    Connections {
+        target: view
+        onPluginReady: {
+            console.log("onPluginReady")
+            var arr = null
+            try {
+                arr = JSON.parse(pluginInfo)
+            } catch (e) {
+                console.log(e)
+                return
+            }
+            gConfig.contentData.append(arr)
+        }
+    }
+    Component.onCompleted: {
+        view.loadPlugin("TaoPlugin")
     }
     TitlePage {
         id: titleRect

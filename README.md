@@ -4,8 +4,10 @@
 
 以方便开发Qml程序，使Quick更Quick。
 
+实现原理可以参考[博客](https://jaredtao.github.io)的《Qml组件化编程》系列文章。
 
 ## Build status
+
 | [Linux][lin-link] | [Windows][win-link] |
 | :---------------: | :-----------------: |
 | ![lin-badge]      | ![win-badge]        |
@@ -16,6 +18,35 @@
 [win-link]: https://ci.appveyor.com/project/jaredtao/TaoQuick "AppVeyor build status"
 ## License
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaredtao/TaoQuick/blob/master/LICENSE)
+
+## 效果预览
+### 启动界面
+
+![](Preview/Splash.gif)
+
+### 按钮控件
+
+![](Preview/Buttons.gif)
+
+### 拖拽控件
+
+![](Preview/Drags.gif)
+
+### 自定义窗口
+
+![](Preview/CustomWindow.gif)
+
+### 动态换皮肤
+
+![](Preview/Skin.gif)
+
+### 多国语言
+
+![](Preview/Language.gif)
+
+### 进度条
+
+![](Preview/ProgressBar.gif)
 
 ## 代码结构
 

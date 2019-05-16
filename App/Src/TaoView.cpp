@@ -1,7 +1,6 @@
-﻿#include "stdafx.h"
-
+﻿
 #include "TaoView.h"
-
+#include "Logger/Logger.h"
 #include <QTranslator>
 #include <QQmlEngine>
 TaoView::TaoView(QWindow *parent) : QQuickView(parent)
@@ -40,7 +39,7 @@ TaoView::TaoView(QWindow *parent) : QQuickView(parent)
     {
         auto trans = std::make_shared<QTranslator>();
         bool ok = trans->load(fileList.at(i));
-        qWarning() << m_languageList.at(i) << fileList.at(i) << ok;
+        LOG_INFO << m_languageList.at(i) << fileList.at(i) << ok;
         m_transMap[m_languageList.at(i)] = trans;
     }
     m_pLastLang = m_transMap[m_languageList.at(0)].get();
@@ -49,17 +48,56 @@ TaoView::TaoView(QWindow *parent) : QQuickView(parent)
     emit languageListChanged();
 }
 
+TaoView::~TaoView()
+{
+    qDeleteAll(m_pluginList);
+}
+
 void TaoView::reTrans(const QString &lang)
 {
     if (m_lang == lang)
     {
         return;
     }
-    m_lang = lang;
 
     QCoreApplication::removeTranslator(m_pLastLang);
     m_pLastLang = m_transMap[lang].get();
     QCoreApplication::installTranslator(m_pLastLang);
+    for (auto pPlugin : m_pluginList)
+    {
+        pPlugin->replaceTranslater(m_lang, lang);
+    }
+    m_lang = lang;
     engine()->retranslate();
     emit reTransed();
+}
+
+void TaoView::loadPlugin(const QString &pluginPath)
+{
+    QDir dir(pluginPath);
+
+    auto list = dir.entryInfoList({"*"}, QDir::Files);
+
+    for (auto info : list) {
+        if (QLibrary::isLibrary(info.absoluteFilePath()))
+        {
+            m_loader = std::make_unique<QPluginLoader>();
+            m_loader->setFileName(info.absoluteFilePath());
+            if (!m_loader->load())
+            {
+                LOG_WARN << m_loader->fileName() << m_loader->errorString();
+                continue;
+            }
+            QObject *pObj = m_loader->instance();
+            auto pPlugin = qobject_cast<ITaoQuickPlugin *>(pObj);
+            if (!pPlugin)
+            {
+                continue;
+            }
+            pPlugin->init();
+            emit pluginReady(QString(QJsonDocument(pPlugin->infos()).toJson()));
+            m_pluginList.append(pPlugin);
+            LOG_INFO << "loaded plugin " << info.absoluteFilePath();
+        }
+    }
 }
