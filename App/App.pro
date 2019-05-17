@@ -54,16 +54,16 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
-
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
-    copy_qm.target = $$DESTDIR/copyqm
-    copy_qm.depends = $${_PRO_FILE_PWD_}/trans/*.qm
+    copy_qm.target = copyqm
+    copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
+    srs = $$_PRO_FILE_PWD_/Trans/*.qm
     tgt = $$DESTDIR
     win32 {
         tgt ~= s,/,\\\\,g
-        copy_qm.depends ~= s,/,\\\\,g
+        srs ~= s,/,\\\\,g
     }
-    copy_qm.commands = $${QMAKE_COPY_FILE} $${copy_qm.depends} $${tgt}
+    copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
     QMAKE_EXTRA_TARGETS += copy_qm
     PRE_TARGETDEPS += $$copy_qm.target
 }

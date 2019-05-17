@@ -1,5 +1,4 @@
-﻿
-#include "TaoView.h"
+﻿#include "TaoView.h"
 #include "Logger/Logger.h"
 #include <QTranslator>
 #include <QQmlEngine>

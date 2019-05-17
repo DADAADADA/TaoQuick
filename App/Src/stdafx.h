@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef STDAFX_H
+#define STDAFX_H
 /* Add C includes here */
 
 
@@ -28,5 +28,7 @@
 #include <QImage>
 #include <QPainter>
 #include <QSettings>
+
+#endif
 
 #endif
