@@ -31,7 +31,8 @@ HEADERS += \
     Src/ITaoQuickPlugin.h \
     Src/Logger/Logger.h \
     Src/Logger/LoggerTemplate.h \
-    Src/TaoView.h
+    Src/TaoView.h \
+    Ver.h
 SOURCES += \
     Src/Logger/Logger.cpp \
     Src/TaoView.cpp \
@@ -54,6 +55,8 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
+
+#pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
     copy_qm.target = copyqm
     copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm

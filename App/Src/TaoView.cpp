@@ -2,6 +2,7 @@
 #include "Logger/Logger.h"
 #include <QTranslator>
 #include <QQmlEngine>
+#include <QCoreApplication>
 TaoView::TaoView(QWindow *parent) : QQuickView(parent)
 {
     setFlag(Qt::FramelessWindowHint);
