@@ -23,6 +23,7 @@ isEmpty(TaoVersionPri) {
     DEFINES += TaoMIN=$${MIN}
     DEFINES += TaoPAT=$${PAT}
     DEFINES += TaoDATETIME=\"\\\"$${_DATE_}\\\"\"
+    DEFINES += TaoCompilerVendor=\"\\\"$${QT_VERSION} $${QMAKE_PLATFORM} $${QMAKE_COMPILER} $${QMAKE_TARGET.arch}\\\"\"
     message($${DEFINES})
 }
 

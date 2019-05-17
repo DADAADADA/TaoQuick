@@ -18,11 +18,11 @@ Item {
         property string buildRevision
         property string copyRight
         property string descript
+        property string compilerVendor
     }
     AboutDialog {
         id: aboutDialog
-        width: 400
-        height: 300
+
     }
     Connections {
         target: view

@@ -57,7 +57,7 @@ TRANSLATIONS += \
     trans/trans_de.qs \
     trans/trans_ar.qs
 
-message($${QT_VERSION})
+
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
     copy_qm.target = copyqm
