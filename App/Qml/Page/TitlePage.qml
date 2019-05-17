@@ -96,6 +96,7 @@ Rectangle {
                     model: gConfig.themes
                     cellWidth: 80
                     cellHeight: 80
+                    clip: true
                     delegate: Item {
                         width: 80
                         height: 80
@@ -165,6 +166,7 @@ Rectangle {
                     anchors.fill: parent
                     anchors.margins: 2
                     model: view.languageList
+                    clip: true
                     delegate: TTextBtn {
                         width: langListView.width
                         height: 36
