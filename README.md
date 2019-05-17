@@ -62,6 +62,9 @@
 
 ![](Preview/ProgressBar.gif)
 
+## 代码结构
+
+![](Preview/Struct.png)
 
 ## 特别说明
 
