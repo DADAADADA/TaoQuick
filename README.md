@@ -7,8 +7,6 @@
 实现原理可以参考[博客](https://jaredtao.github.io)的《Qml组件化编程》系列文章。
 
 ## Build status
-
-## Build status
 | [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[License][license-link] | [Release][release-link]|[Download][download-link]|
 | :---------------: | :-----------------: | :-----------------:|:-----------------: |:-----------------: |
 | ![lin-badge]      | ![win-badge]        | ![license-badge] |![release-badge] | ![download-badge]|
@@ -24,7 +22,12 @@
 [license-link]: https://github.com/jaredtao/TaoQuick/blob/master/LICENSE "LICENSE"
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg "MIT"
 
+## 开发环境
+
+* Qt 5.12.x
+
 ## 效果预览
+
 ### 启动界面
 
 ![](Preview/Splash.gif)
@@ -49,6 +52,10 @@
 
 ![](Preview/Language.gif)
 
+### 渐变
+
+![](Preview/Gradiant.gif)
+
 ### 进度条
 
 ![](Preview/ProgressBar.gif)
@@ -59,10 +66,6 @@
 项目包含插件加载机制，方便后续开发一些高级功能插件。
 
 高级功能插件不开源，收取一定费用，需要的请联系我。
-
-## 开发环境
-
-* Qt 5.12.x Windows
 
 ### 联系方式:
 

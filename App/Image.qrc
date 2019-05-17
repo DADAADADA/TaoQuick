@@ -18,5 +18,7 @@
         <file>Image/Button/cry-fill.png</file>
         <file>Image/Button/smile-fill.png</file>
         <file>Image/Button/smile-fill-hover.png</file>
+        <file>Image/Window/about white.png</file>
+        <file>Image/Window/about_gray.png</file>
     </qresource>
 </RCC>

@@ -19,6 +19,11 @@ Item {
         property string copyRight
         property string descript
     }
+    AboutDialog {
+        id: aboutDialog
+        width: 400
+        height: 300
+    }
     Connections {
         target: view
         onPluginReady: {
@@ -47,7 +52,7 @@ Item {
             anchors {
                 left: parent.left
                 right: parent.right
-                rightMargin: 170
+                rightMargin: 200
             }
             control: view
         }
