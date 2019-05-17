@@ -17,7 +17,7 @@
 [lin-link]: https://travis-ci.com/jaredtao/TaoQuick "Travis build status"
 [win-badge]: https://ci.appveyor.com/api/projects/status/ontim37g33hvfv72?svg=true "AppVeyor build status"
 [win-link]: https://ci.appveyor.com/project/jiawentao/TaoQuick "AppVeyor build status"
-[release-link]: https://github.com/jaredtao/TableEdit/releases "Release status"
+[release-link]: https://github.com/jaredtao/TaoQuick/releases "Release status"
 [release-badge]: https://img.shields.io/github/release/jaredtao/TaoQuick.svg?style=flat-square" "Release status"
 [download-link]: https://github.com/jaredtao/TaoQuick/releases/latest "Download status"
 [download-badge]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/total.svg?style=flat-square "Download status"
