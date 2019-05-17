@@ -34,6 +34,7 @@ Item {
         }
     }
     Component.onCompleted: {
+        view.initAppInfo()
         view.loadPlugin("TaoPlugin")
     }
     TitlePage {

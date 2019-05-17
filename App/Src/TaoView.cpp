@@ -1,8 +1,13 @@
 ﻿#include "TaoView.h"
 #include "Logger/Logger.h"
+#include "Ver.h"
+
 #include <QTranslator>
 #include <QQmlEngine>
 #include <QCoreApplication>
+#include <QDir>
+#include <QJsonDocument>
+#include <QQuickItem>
 TaoView::TaoView(QWindow *parent) : QQuickView(parent)
 {
     setFlag(Qt::FramelessWindowHint);
@@ -99,5 +104,20 @@ void TaoView::loadPlugin(const QString &pluginPath)
             m_pluginList.append(pPlugin);
             LOG_INFO << "loaded plugin " << info.absoluteFilePath();
         }
+    }
+}
+
+void TaoView::initAppInfo()
+{
+    auto pInfo = rootObject()->findChild<QObject * >("appInfo");
+    if (pInfo)
+    {
+        pInfo->setProperty("appName", VER_PRODUCTNAME_STR);
+        pInfo->setProperty("appVersion", TaoVer);
+        pInfo->setProperty("latestVersion", TaoVer);
+        pInfo->setProperty("buildDateTime", QString(TaoDATETIME));
+        pInfo->setProperty("buildRevision", QString(TaoREVISION));
+        pInfo->setProperty("copyRight", VER_LEGALCOPYRIGHT_STR);
+        pInfo->setProperty("descript", VER_FILEDESCRIPTION_STR);
     }
 }

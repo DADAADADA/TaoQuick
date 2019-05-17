@@ -16,7 +16,7 @@ public:
     ~TaoView();
     Q_INVOKABLE void reTrans(const QString &lang);
     Q_INVOKABLE void loadPlugin(const QString &pluginPath = u8"plugin/");
-
+    Q_INVOKABLE void initAppInfo();
     const QStringList &languageList() const
     {
         return m_languageList;

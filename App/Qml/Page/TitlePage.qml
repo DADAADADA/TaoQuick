@@ -1,4 +1,4 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
 import QtQuick.Controls 2.5
 import "qrc:/Tao/Qml"
 Rectangle {
@@ -178,5 +178,12 @@ Rectangle {
                 }
             }
         }
+        //TODO add about dialog
+//        TImageBtn {
+//            width: 20
+//            height: 20
+//            anchors.verticalCenter: parent.verticalCenter
+
+//        }
     }
 }

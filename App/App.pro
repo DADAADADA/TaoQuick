@@ -2,7 +2,7 @@ TEMPLATE = app
 TARGET = TaoQuickDemo
 QT += qml quick
 CONFIG += plugin c++14 qtquickcompiler
-
+include(../Common/TaoVersion.pri)
 #msvc{
 #    QMAKE_CFLAGS += -source-charset:utf-8
 #    QMAKE_CXXFLAGS += -source-charset:utf-8
@@ -13,6 +13,7 @@ PRECOMPILED_HEADER = Src/stdafx.h
 precompile_header:!isEmpty(PRECOMPILED_HEADER) {
 DEFINES += USING_PCH
 }
+
 win32 {
     RC_FILE = App.rc
 }
@@ -55,6 +56,7 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
+
 
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {

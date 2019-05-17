@@ -4,6 +4,9 @@ TARGET = TaoQuick
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
 uri = TaoQuick
+
+include(../Common/TaoVersion.pri)
+
 HEADERS += \
         Src/taoquick_plugin.h
 
@@ -33,6 +36,7 @@ QML_DESIGNER_IMPORT_PATH = $$_PRO_FILE_PWD_/Qml
     QMAKE_EXTRA_TARGETS += copy_qmldir
     PRE_TARGETDEPS += $$copy_qmldir.target
 }
+
 DISTFILES = qmldir
 qmldir.files = qmldir
 unix {
