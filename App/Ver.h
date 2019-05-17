@@ -1,5 +1,4 @@
-﻿#ifndef TAOVERHEADER
-#define TAOVERHEADER
+﻿#pragma once
 
 #define RELEASE_VER 1  // 0: beta version; 1: release version
 #define RELEASE_DATE __DATE__ //yyyy-mm-dd; only used for RELEASE_VER=1
@@ -25,4 +24,3 @@
 #define TOSTRING(arg) TOSTRING2(arg)
 #define RELEASE_VER_STR    TOSTRING(RELEASE_VER_MAIN) "." TOSTRING(RELEASE_VER_MAIN2) "." TOSTRING(RELEASE_VER_SUB)
 
-#endif
