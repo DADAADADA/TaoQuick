@@ -2,7 +2,7 @@ TEMPLATE = app
 TARGET = TaoQuickDemo
 QT += qml quick
 CONFIG += plugin c++14 qtquickcompiler
-
+include(../Common/TaoVersion.pri)
 #msvc{
 #    QMAKE_CFLAGS += -source-charset:utf-8
 #    QMAKE_CXXFLAGS += -source-charset:utf-8
@@ -13,6 +13,7 @@ PRECOMPILED_HEADER = Src/stdafx.h
 precompile_header:!isEmpty(PRECOMPILED_HEADER) {
 DEFINES += USING_PCH
 }
+
 win32 {
     RC_FILE = App.rc
 }
@@ -31,7 +32,8 @@ HEADERS += \
     Src/ITaoQuickPlugin.h \
     Src/Logger/Logger.h \
     Src/Logger/LoggerTemplate.h \
-    Src/TaoView.h
+    Src/TaoView.h \
+    Ver.h
 SOURCES += \
     Src/Logger/Logger.cpp \
     Src/TaoView.cpp \
@@ -55,15 +57,18 @@ TRANSLATIONS += \
     trans/trans_de.qs \
     trans/trans_ar.qs
 
+
+#pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
-    copy_qm.target = $$DESTDIR/copyqm
-    copy_qm.depends = $${_PRO_FILE_PWD_}/trans/*.qm
+    copy_qm.target = copyqm
+    copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
+    srs = $$_PRO_FILE_PWD_/Trans/*.qm
     tgt = $$DESTDIR
     win32 {
         tgt ~= s,/,\\\\,g
-        copy_qm.depends ~= s,/,\\\\,g
+        srs ~= s,/,\\\\,g
     }
-    copy_qm.commands = $${QMAKE_COPY_FILE} $${copy_qm.depends} $${tgt}
+    copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
     QMAKE_EXTRA_TARGETS += copy_qm
     PRE_TARGETDEPS += $$copy_qm.target
 }

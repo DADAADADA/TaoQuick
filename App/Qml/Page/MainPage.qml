@@ -8,6 +8,22 @@ Item {
         id: gConfig
         objectName: "gConfig"
     }
+    QtObject {
+        id: appInfo
+        objectName: "appInfo"
+        property string appName
+        property string appVersion
+        property string latestVersion
+        property string buildDateTime
+        property string buildRevision
+        property string copyRight
+        property string descript
+        property string compilerVendor
+    }
+    AboutDialog {
+        id: aboutDialog
+
+    }
     Connections {
         target: view
         onPluginReady: {
@@ -23,6 +39,7 @@ Item {
         }
     }
     Component.onCompleted: {
+        view.initAppInfo()
         view.loadPlugin("TaoPlugin")
     }
     TitlePage {
@@ -35,7 +52,7 @@ Item {
             anchors {
                 left: parent.left
                 right: parent.right
-                rightMargin: 170
+                rightMargin: 200
             }
             control: view
         }

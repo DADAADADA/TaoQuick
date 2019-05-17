@@ -6,7 +6,8 @@ void TaoQuickPlugin::registerTypes(const char *uri)
     Q_UNUSED(uri);
     Q_INIT_RESOURCE(Qml);
     qInfo() << "\033[35m" << "Your application is using TaoQuick ";
-    qInfo() << " Version: 1.0";
+    qInfo() << " Version:" << TaoMAJ << TaoMIN << TaoPAT;
+    qInfo() << " Revision:" << TaoREVISION;
     qInfo() << " Author: Jared Tao";
     qInfo() << " You can find more info about TaoQuick in website:"
             << "\033[0m"
