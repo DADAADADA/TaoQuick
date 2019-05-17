@@ -44,7 +44,7 @@ Item {
     }
     Image {
         id: image
-        source: percent === 100 ? "qrc:/Image/ProgressBar/ok.png" : "qrc:/Image/ProgressBar/fail.png"
+        source: percent === 100 ? "qrc:/Core/Image/ProgressBar/ok.png" : "qrc:/Core/Image/ProgressBar/fail.png"
         enabled: barType === TNormalProgress.BarType.SucceedOrFailed
         visible: enabled
         scale: 2

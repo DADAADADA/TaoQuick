@@ -180,13 +180,12 @@ Rectangle {
                 }
             }
         }
-        //TODO add about dialog
         TImageBtn {
             width: 20
             height: 20
             anchors.verticalCenter: parent.verticalCenter
 
-            imageUrl: containsMouse ? "qrc:/Image/Window/about white.png" : "qrc:/Image/Window/about_gray.png"
+            imageUrl: containsMouse ? "qrc:/Image/Window/about_white.png" : "qrc:/Image/Window/about_gray.png"
             onClicked: {
                 aboutDialog.show()
             }
