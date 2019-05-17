@@ -4,7 +4,9 @@
 
 以方便开发Qml程序，使Quick更Quick。
 
-实现原理可以参考[博客](https://jaredtao.github.io)的《Qml组件化编程》系列文章。
+实现原理可以参考[博客](https://jaredtao.github.io) 或者 [知乎专栏](https://zhuanlan.zhihu.com/TaoQt)
+
+《Qml组件化编程》系列文章。
 
 ## Build status
 | [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[License][license-link] | [Release][release-link]|[Download][download-link]|
