@@ -17,6 +17,9 @@ DEFINES += USING_PCH
 win32 {
     RC_FILE = App.rc
 }
+macos {
+    ICON = milk.icns
+}
 DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/)
 MOC_DIR = build/moc
 RCC_DIR = build/rcc
