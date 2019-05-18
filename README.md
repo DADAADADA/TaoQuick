@@ -8,21 +8,58 @@
 
 《Qml组件化编程》系列文章。
 
-## Build status
-| [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[License][license-link] | [Release][release-link]|[Download][download-link]|
-| :---------------: | :-----------------: | :-----------------:|:-----------------: |:-----------------: |
-| ![lin-badge]      | ![win-badge]        | ![license-badge] |![release-badge] | ![download-badge]|
+## CI
+|[License][license-link]| [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[Release][release-link]|[Download][download-link]|latest|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|![license-badge]| ![lin-badge]| ![win-badge]|![release-badge] |![download-badge]|![download-latest]|
+
+[license-link]: https://github.com/jaredtao/TaoQuick/blob/master/LICENSE "LICENSE"
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg "MIT"
 
 [lin-badge]: https://travis-ci.com/jaredtao/TaoQuick.svg?branch=master "Travis build status"
 [lin-link]: https://travis-ci.com/jaredtao/TaoQuick "Travis build status"
 [win-badge]: https://ci.appveyor.com/api/projects/status/ontim37g33hvfv72?svg=true "AppVeyor build status"
 [win-link]: https://ci.appveyor.com/project/jiawentao/TaoQuick "AppVeyor build status"
+
 [release-link]: https://github.com/jaredtao/TaoQuick/releases "Release status"
-[release-badge]: https://img.shields.io/github/release/jaredtao/TaoQuick.svg?style=flat-square" "Release status"
+[release-badge]: https://img.shields.io/github/release/jaredtao/TaoQuick.svg?style=flat-square "Release status"
 [download-link]: https://github.com/jaredtao/TaoQuick/releases/latest "Download status"
-[download-badge]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/total.svg?style=flat-square "Download status"
-[license-link]: https://github.com/jaredtao/TaoQuick/blob/master/LICENSE "LICENSE"
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg "MIT"
+[download-badge]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/total.svg "Download status"
+[download-latest]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/latest/total.svg "latest status"
+
+## Repo 
+|latest tag|languages|top language|code size|repo size|
+|:--: |:--: |:--:|:--:|:--:|
+|![tag-latest]|![languanges]|![taolanguage]|![code-size]|![repo-size]|
+
+[languanges]: https://img.shields.io/github/languages/count/jaredtao/taoquick.svg "language count"
+[taolanguage]: https://img.shields.io/github/languages/top/jaredtao/taoquick.svg "top language"
+[code-size]: https://img.shields.io/github/languages/code-size/jaredtao/taoquick.svg "code size"
+[repo-size]: https://img.shields.io/github/repo-size/jaredtao/taoquick.svg "repo-size"
+[tag-latest]: https://img.shields.io/github/tag/jaredtao/taoquick.svg
+
+## Issue
+|[Issues][issues-link]|closed issue|pull request|pull closed|
+|:--:|:--:|:--:|:--:|
+|![issuse-badge]|![issue-closed]|![pull-request]|![pull-closed]|
+
+[issues-link]: https://github.com/jaredtao/TaoQuick/issues 
+[issuse-badge]: https://img.shields.io/github/issues/jaredtao/taoquick.svg?style=popout 
+[issue-closed]: https://img.shields.io/github/issues-closed/jaredtao/taoquick.svg
+[pull-request]: https://img.shields.io/github/issues-pr/jaredtao/taoquick.svg
+[pull-closed]: https://img.shields.io/github/issues-pr-closed/jaredtao/taoquick.svg
+## Other status
+
+|commit-active|laste commit|release date|forks|stars|goto hit|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|![commit-active]|![commit-latest]|![release-date]|![forks-badge]|![stars-badge]|![goto-hit]|
+
+[forks-badge]: https://img.shields.io/github/forks/jaredtao/taoquick.svg "forks"
+[stars-badge]: https://img.shields.io/github/stars/jaredtao/taoquick.svg "stars"
+[goto-hit]: https://img.shields.io/github/search/jaredtao/taoquick/goto.svg "goto-hit"
+[commit-active]: https://img.shields.io/github/commit-activity/w/jaredtao/taoquick.svg
+[commit-latest]: https://img.shields.io/github/last-commit/jaredtao/taoquick.svg
+[release-date]: https://img.shields.io/github/release-date/jaredtao/taoquick.svg
 
 ## 开发环境
 
