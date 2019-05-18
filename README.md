@@ -8,7 +8,8 @@
 
 《Qml组件化编程》系列文章。
 
-## CI
+## 徽章预览
+### CI
 |[License][license-link]| [Ubuntu/MacOS][lin-link] | [Windows][win-link] |[Release][release-link]|[Download][download-link]|latest|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |![license-badge]| ![lin-badge]| ![win-badge]|![release-badge] |![download-badge]|![download-latest]|
@@ -27,7 +28,7 @@
 [download-badge]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/total.svg "Download status"
 [download-latest]: https://img.shields.io/github/downloads/jaredtao/TaoQuick/latest/total.svg "latest status"
 
-## Repo 
+### Repo 
 |latest tag|languages|top language|code size|repo size|
 |:--: |:--: |:--:|:--:|:--:|
 |![tag-latest]|![languanges]|![taolanguage]|![code-size]|![repo-size]|
@@ -38,7 +39,7 @@
 [repo-size]: https://img.shields.io/github/repo-size/jaredtao/taoquick.svg "repo-size"
 [tag-latest]: https://img.shields.io/github/tag/jaredtao/taoquick.svg
 
-## Issue
+### Issue
 |[Issues][issues-link]|closed issue|pull request|pull closed|
 |:--:|:--:|:--:|:--:|
 |![issuse-badge]|![issue-closed]|![pull-request]|![pull-closed]|
@@ -48,7 +49,8 @@
 [issue-closed]: https://img.shields.io/github/issues-closed/jaredtao/taoquick.svg
 [pull-request]: https://img.shields.io/github/issues-pr/jaredtao/taoquick.svg
 [pull-closed]: https://img.shields.io/github/issues-pr-closed/jaredtao/taoquick.svg
-## Other status
+
+### Other status
 
 |commit-active|laste commit|release date|forks|stars|goto hit|
 |:--:|:--:|:--:|:--:|:--:|:--:|
