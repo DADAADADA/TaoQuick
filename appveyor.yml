@@ -23,7 +23,7 @@ artifacts:
 deploy:
   provider: GitHub
   auth_token: $(GITHUB_OAUTH_TOKEN)
-  description: 'TableEdit Release'
+  description: 'TaoQuickDemo Release'
   draft: false
   prerelease: false
   on:
