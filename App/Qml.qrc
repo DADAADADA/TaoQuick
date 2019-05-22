@@ -14,5 +14,6 @@
         <file>Qml/Contents/BaseComponent/Gradiants.qml</file>
         <file>Qml/Contents/Welcome/Welcome.qml</file>
         <file>Qml/Page/AboutDialog.qml</file>
+        <file>Qml/Contents/BaseComponent/Dialogs.qml</file>
     </qresource>
 </RCC>
