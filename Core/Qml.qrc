@@ -15,5 +15,8 @@
         <file>Qml/BasicComponent/Progress/TNormalProgress.qml</file>
         <file>Qml/BasicComponent/Progress/TCircleProgress.qml</file>
         <file>Qml/BasicComponent/Others/TDialog.qml</file>
+        <file>Qml/BasicComponent/Progress/TInOut.qml</file>
+        <file>Qml/Effect/TRingPage.qml</file>
+        <file>Qml/Effect/TFocus.qml</file>
     </qresource>
 </RCC>
