@@ -1,4 +1,7 @@
-import QtQuick 2.9
+﻿import QtQuick 2.9
+
+import "qrc:/Tao/Qml"
+
 Rectangle {
     id: root
     Rectangle {
@@ -45,6 +48,13 @@ Rectangle {
             anchors.centerIn: parent
             font.pixelSize: 26
             color: gConfig.titleBackground
+        }
+        TFPS {
+            width: 100
+            height: 40
+            anchors.right: parent.right
+            anchors.top: parent.top
+            textColor: gConfig.titleBackground
         }
     }
     Item {

@@ -18,5 +18,6 @@
         <file>Qml/BasicComponent/Progress/TInOut.qml</file>
         <file>Qml/Effect/TRingPage.qml</file>
         <file>Qml/Effect/TFocus.qml</file>
+        <file>Qml/BasicComponent/Others/TFPS.qml</file>
     </qresource>
 </RCC>
