@@ -79,6 +79,7 @@ Rectangle {
             top: vLine.bottom
             bottom: parent.bottom
         }
+        clip: true
         Loader {
             id: contentPage
             anchors.fill: parent
