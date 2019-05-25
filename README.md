@@ -151,9 +151,6 @@ import "qrc:/Tao/Qml/"
 
 TaoQuick的Qml是以资源文件的方式编译进dll的，暂时不支持QtCreator的语法高亮。
 
-## TaoQuick文档
-
-
 ## 特别说明
 
 TaoQuickDemo包含插件加载机制，方便后续开发一些高级功能插件。

@@ -158,7 +158,7 @@ Item {
             pressRect.startY = mouseY
             pressAnimation.start()
         }
-        onClicked: root.click();
+        onClicked: root.clicked();
         cursorShape: Qt.PointingHandCursor
     }
 }

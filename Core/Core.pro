@@ -4,7 +4,6 @@ TARGET = $$qtLibraryTarget(TaoQuick)
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
 
-CONFIG += prepare_docs qt_docs_targets
 uri = TaoQuick
 
 include(../Common/TaoVersion.pri)

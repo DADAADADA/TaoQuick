@@ -5,7 +5,6 @@ SUBDIRS += \
 
 CONFIG += ordered
 
-
 OTHER_FILES += README.md \
     .clang-format \
     LICENSE \
