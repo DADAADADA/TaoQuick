@@ -111,6 +111,8 @@ App目录是TaoQuickDemo项目，示例如何使用TaoQuick库的。
 
 Core目录是TaoQuick库，可以安装并在任意项目中使用。
 
+TaoQuick库可以通过QtCreator或者命令行安装。
+
 ### QtCreator安装TaoQuick
 
 如下图所示:

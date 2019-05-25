@@ -25,11 +25,12 @@ MOC_DIR = build/moc
 RCC_DIR = build/rcc
 UI_DIR = build/ui
 OBJECTS_DIR = build/obj
+
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML2_IMPORT_PATH =
+QML2_IMPORT_PATH += $${_PRO_FILE_PWD_}/../Core/Qml
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
-QML_DESIGNER_IMPORT_PATH =
+QML_DESIGNER_IMPORT_PATH += $${_PRO_FILE_PWD_}/../Core/Qml
 
 HEADERS += \
     Src/ITaoQuickPlugin.h \

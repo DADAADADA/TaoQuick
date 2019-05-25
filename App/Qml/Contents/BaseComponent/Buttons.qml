@@ -2,7 +2,6 @@
 import QtQuick.Controls 2.5
 
 import "qrc:/Tao/Qml/"
-
 Item {
     anchors.fill: parent
     Grid {

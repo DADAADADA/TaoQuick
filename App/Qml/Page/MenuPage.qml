@@ -44,7 +44,7 @@ ListView {
             textItem.leftPadding: 6
             textHorizontalAlignment: Text.AlignLeft
             textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
-            onClick: {
+            onClicked: {
                 if (model.url)
                 {
                     currentTitle = model.name
@@ -81,7 +81,7 @@ ListView {
                 height: rowHeight
                 text: model.name
                 textColor: text === currentTitle ? gConfig.titleBackground : gConfig.textColor
-                onClick: {
+                onClicked: {
                     currentTitle = model.name
                     currentUrl = model.url
                     subIndex = index

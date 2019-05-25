@@ -3,6 +3,8 @@ TARGET = $$qtLibraryTarget(TaoQuick)
 
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
+
+CONFIG += prepare_docs qt_docs_targets
 uri = TaoQuick
 
 include(../Common/TaoVersion.pri)
@@ -23,7 +25,7 @@ DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/$${uri})
 QML2_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml
 
 # Additional import path used to resolve QML modules just for Qt Quick Designer
-QML_DESIGNER_IMPORT_PATH = $$_PRO_FILE_PWD_/Qml
+QML_DESIGNER_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml
 
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
     copy_qmldir.target = $$DESTDIR/qmldir
