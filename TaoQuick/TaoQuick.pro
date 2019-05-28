@@ -7,7 +7,7 @@ CONFIG += plugin c++11 qtquickcompiler
 uri = TaoQuick
 
 include(../Common/TaoVersion.pri)
-
+include(Qml/TaoQuickDesigner.pri)
 HEADERS += \
         Src/taoquick_plugin.h
 
@@ -38,15 +38,14 @@ QML_DESIGNER_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml
     PRE_TARGETDEPS += $$copy_qmldir.target
 }
 
-DISTFILES = qmldir
-qmldir.files = qmldir
+#DISTFILES = qmldir
+#qmldir.files = qmldir
 
-installPath = $$[QT_INSTALL_QML]/$${uri}
-win32 {
-    installPath ~= s,/,\\,g
-}
-qmldir.path = $$installPath
-target.path = $$installPath
-INSTALLS += target qmldir
-
+#installPath = $$[QT_INSTALL_QML]/$${uri}
+#win32 {
+#    installPath ~= s,/,\\,g
+#}
+#qmldir.path = $$installPath
+#target.path = $$installPath
+#INSTALLS += target qmldir
 
