@@ -5,8 +5,8 @@ import "./Page"
 
 Item {
     id: root
-    width: 1024
-    height: 768
+    width: 1920
+    height: 1080
 
     Splash {
         id: splash

@@ -61,9 +61,8 @@ QtObject {
                 ListElement { name: qsTr("拖动组件"); title: qsTr("拖动组件"); url: "qrc:/Qml/Contents/BaseComponent/Drags.qml"},
                 ListElement { name: qsTr("渐变"); title: qsTr("渐变"); url: "qrc:/Qml/Contents/BaseComponent/Gradiants.qml"},
                 ListElement { name: qsTr("进度条组件"); title: qsTr("进度条组件"); url: "qrc:/Qml/Contents/BaseComponent/Progresses.qml"},
-                ListElement { name: qsTr("Dialog"); title: qsTr("Dialog"); url: "qrc:/Qml/Contents/BaseComponent/Dialogs.qml"}
+                ListElement { name: qsTr("对话框"); title: qsTr("对话框"); url: "qrc:/Qml/Contents/BaseComponent/Dialogs.qml"}
             ]
         }
     }
-
 }
