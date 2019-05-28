@@ -107,11 +107,15 @@
 
 ## TaoQuick 安装
 
-App目录是TaoQuickDemo项目，示例如何使用TaoQuick库的。
+TaoQuickDemo目录是Demo项目，示例如何使用TaoQuick库。
 
-Core目录是TaoQuick库，可以安装并在任意项目中使用。
+TaoQuick目录就是TaoQuick库。
 
-TaoQuick库可以通过QtCreator或者命令行安装。
+可以直接使用生成的dll库，dll生成目录在项目的bin/TaoQuick目录下。
+
+也可以直接将TaoQuick安装进Qt环境，支持在QtCreator中使用Designer进行拖拽式设计。
+
+安装方法可以直接用QtCreator，也可以是命令行安装。
 
 ### QtCreator安装TaoQuick
 
@@ -121,7 +125,7 @@ TaoQuick库可以通过QtCreator或者命令行安装。
 
 任意编译器kit都可以，项目->构建步骤->添加build步骤->Make，添加之后在make参数中输入install。最后重新构建工程，即可完成安装。
 
-TaoQuick.lib将被安装到{QTDIR}/qml/TaoQuick/TaoQuick.lib 路径下。
+TaoQuick库将被安装到{QTDIR}/qml/TaoQuick/ 路径下。
 
 ### 命令行安装TaoQuick
 
@@ -136,9 +140,11 @@ make install
 
 ```
 
-## TaoQuick 使用
+## TaoQuick dll的使用
 
-只要写上这两句，就完成了TaoQuick的导入
+1. 将bin/TaoQuick文件夹复制到你的可执行程序同级目录下
+
+2. 在你的Qml中写上这两句，就完成了TaoQuick的导入
 ```
 import TaoQuick 1.0
 import "qrc:/Tao/Qml/"
@@ -149,7 +155,18 @@ import "qrc:/Tao/Qml/"
 `import TaoQuick 1.0` 是在导入dll库。
 `import "qrc:/Tao/Qml/` 是在导入"qrc:/Tao/Qml/"路径下的qmldir文件。这个文件描述了TaoQuick中的所有组件。导入过后就能使用全部的组件了。
 
-TaoQuick的Qml是以资源文件的方式编译进dll的，暂时不支持QtCreator的语法高亮。
+这种方式TaoQuick的Qml是以资源文件的方式编译进dll的，所以不支持QtCreator的语法高亮。（商业版有内建资源功能，或许可以支持）
+
+## TaoQuick Designer的使用
+
+1. 确保安装TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
+2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick
+
+![](Preview/import.png)
+
+3. 拖拽创建组件，修改属性
+![](Preview/Drag.gif)
+
 
 ## 特别说明
 
