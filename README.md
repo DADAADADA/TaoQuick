@@ -159,7 +159,7 @@ import "qrc:/Tao/Qml/"
 
 ## TaoQuick Designer的使用
 
-1. 确保安装TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
+1. 确保TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
 2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick
 
 ![](Preview/Import.png)
