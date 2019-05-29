@@ -2,7 +2,7 @@
 
 这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，
 
-以方便开发Qml程序，使Quick更Quick。
+以方便开发Qml程序。
 
 实现原理可以参考[博客](https://jaredtao.github.io) 或者 [知乎专栏](https://zhuanlan.zhihu.com/TaoQt)
 
