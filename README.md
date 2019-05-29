@@ -162,7 +162,7 @@ import "qrc:/Tao/Qml/"
 1. 确保安装TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
 2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick
 
-![](Preview/import.png)
+![](Preview/Import.png)
 
 3. 拖拽创建组件，修改属性
 ![](Preview/Drag.gif)
