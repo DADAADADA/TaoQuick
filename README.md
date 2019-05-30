@@ -2,7 +2,7 @@
 
 这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，
 
-以方便开发Qml程序，使Quick更Quick。
+以方便开发Qml程序。
 
 实现原理可以参考[博客](https://jaredtao.github.io) 或者 [知乎专栏](https://zhuanlan.zhihu.com/TaoQt)
 
@@ -159,10 +159,10 @@ import "qrc:/Tao/Qml/"
 
 ## TaoQuick Designer的使用
 
-1. 确保安装TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
-2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick
+1. 确保TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
+2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick。选完记得按一下Ctrl + S保存一下，让Designer正确加载TaoQuick。
 
-![](Preview/import.png)
+![](Preview/Import.png)
 
 3. 拖拽创建组件，修改属性
 ![](Preview/Drag.gif)
