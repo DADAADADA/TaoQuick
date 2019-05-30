@@ -1,6 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtGraphicalEffects 1.12
+import TaoQuick 1.0
+import "../../"
 Item {
     id: r
     property int percent: 0
@@ -17,14 +19,15 @@ Item {
     property color backgroundColor: __backColor
     property color frontColor: {
         switch (barType) {
-        case TNormalProgress.BarType.SucceedOrFailed:
+        case TCircleProgress.BarType.SucceedOrFailed:
             return percent === 100 ? __succeedColor : __failedColor
         default:
             return __blueColor
         }
     }
+
     property string text: String("%1%").arg(percent)
-    property var barType: TNormalProgress.BarType.Text
+    property var barType: TCircleProgress.BarType.Text
     Rectangle {
         id: back
         color: "transparent"
@@ -35,7 +38,7 @@ Item {
     }
     Text {
         id: t
-        enabled: barType === TNormalProgress.BarType.Text
+        enabled: barType === TCircleProgress.BarType.Text
         visible: enabled
         text: r.text
         anchors.centerIn: parent
@@ -45,7 +48,7 @@ Item {
     Image {
         id: image
         source: percent === 100 ? "qrc:/Core/Image/ProgressBar/ok.png" : "qrc:/Core/Image/ProgressBar/fail.png"
-        enabled: barType === TNormalProgress.BarType.SucceedOrFailed
+        enabled: barType === TCircleProgress.BarType.SucceedOrFailed
         visible: enabled
         scale: 2
         anchors.centerIn: parent

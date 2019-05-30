@@ -1,5 +1,5 @@
-﻿import QtQuick 2.9
-import QtQuick.Controls 2.0
+﻿import QtQuick 2.12
+import QtQuick.Controls 2.12
 Rectangle {
     id: root
     property alias textItem: t      //导出Text实例，方便外部直接修改

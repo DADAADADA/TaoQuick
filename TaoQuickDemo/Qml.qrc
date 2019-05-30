@@ -8,7 +8,7 @@
         <file>Qml/Contents/BaseComponent/Progresses.qml</file>
         <file>Qml/Page/NotifyBox.qml</file>
         <file>Qml/Splash.qml</file>
-        <file>Qml/Page/MainPage.qml</file>
+        <file>Qml/MainPage.qml</file>
         <file>Qml/Contents/BaseComponent/Drags.qml</file>
         <file>Qml/Page/ContentData.qml</file>
         <file>Qml/Contents/BaseComponent/Gradiants.qml</file>

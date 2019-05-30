@@ -1,6 +1,6 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.0
-import "../.."
+import QtQuick 2.12
+import QtQuick.Controls 2.12
+
 Item {
     id: root
     //controller 要控制大小的目标，可以是Item，也可以是view，只要提供x、y、width、height等属性的修改

@@ -10,12 +10,12 @@
         <file>Qml/BasicComponent/Others/TDragItem.qml</file>
         <file>Qml/BasicComponent/Others/TResizeBorder.qml</file>
         <file>Qml/BasicComponent/Others/TToolTip.qml</file>
-        <file>Qml/qmldir</file>
         <file>Qml/BasicComponent/Others/TPopup.qml</file>
         <file>Qml/BasicComponent/Progress/TNormalProgress.qml</file>
         <file>Qml/BasicComponent/Progress/TCircleProgress.qml</file>
         <file>Qml/BasicComponent/Others/TDialog.qml</file>
         <file>Qml/BasicComponent/Progress/TInOut.qml</file>
         <file>Qml/BasicComponent/Others/TFPS.qml</file>
+        <file>Qml/qmldir</file>
     </qresource>
 </RCC>

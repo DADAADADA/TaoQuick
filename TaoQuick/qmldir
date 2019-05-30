@@ -1,8 +1,8 @@
 ﻿module TaoQuick
 plugin TaoQuick
 
-depends QtQuick 2.9
-depends QtQuick.Controls 2.0
+depends QtQuick 2.12
+depends QtQuick.Controls 2.12
 
 TGradientBtn 1.0 BasicComponent/Button/TGradientBtn.qml
 TImageBtn 1.0 BasicComponent/Button/TImageBtn.qml

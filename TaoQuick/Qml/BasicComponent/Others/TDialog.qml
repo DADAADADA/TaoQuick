@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtQuick.Dialogs 1.2
+import QtQuick 2.12
+import QtQuick.Dialogs 1.3
 Item {
     //顶层使用Item，不用FileDialog，屏蔽FileDialog内部属性和函数
     enum Type {

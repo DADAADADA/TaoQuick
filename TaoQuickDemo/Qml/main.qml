@@ -14,7 +14,7 @@ Item {
     }
     Loader {
         id: loader
-        source: "qrc:/Qml/Page/MainPage.qml"
+        source: "qrc:/Qml/MainPage.qml"
         asynchronous: true
         opacity: 0
         anchors.fill: parent

@@ -1,5 +1,9 @@
 TEMPLATE = lib
-TARGET = $$qtLibraryTarget(TaoQuick)
+CONFIG(debug, debug|release) {
+    TARGET = TaoQuickd
+} else {
+    TARGET = TaoQuick
+}
 
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
@@ -38,14 +42,14 @@ QML_DESIGNER_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml
     PRE_TARGETDEPS += $$copy_qmldir.target
 }
 
-#DISTFILES = qmldir
-#qmldir.files = qmldir
+DISTFILES = qmldir
+qmldir.files = qmldir
 
-#installPath = $$[QT_INSTALL_QML]/$${uri}
-#win32 {
-#    installPath ~= s,/,\\,g
-#}
-#qmldir.path = $$installPath
-#target.path = $$installPath
-#INSTALLS += target qmldir
+installPath = $$[QT_INSTALL_QML]/$${uri}
+win32 {
+    installPath ~= s,/,\\,g
+}
+qmldir.path = $$installPath
+target.path = $$installPath
+INSTALLS += target qmldir
 

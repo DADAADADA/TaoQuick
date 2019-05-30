@@ -1,5 +1,5 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.0
+import QtQuick 2.12
+import QtQuick.Controls 2.12
 Item {
     id: root
     property url normalUrl      //常规状态下的图片路径

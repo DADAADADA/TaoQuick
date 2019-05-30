@@ -1,6 +1,9 @@
 ﻿import QtQuick 2.9
 import QtQuick.Controls 2.12
+
+import TaoQuick 1.0
 import "qrc:/Tao/Qml/"
+
 Item {
     id: r
     anchors.fill: parent
