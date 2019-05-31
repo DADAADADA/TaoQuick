@@ -111,11 +111,11 @@ TaoQuickDemo目录是Demo项目，示例如何使用TaoQuick库。
 
 TaoQuick目录就是TaoQuick库。
 
-可以直接使用生成的dll库，dll生成目录在项目的bin/TaoQuick目录下。
+可以使用生成的dll库，dll生成目录在项目的bin/TaoQuick目录下。
 
-也可以直接将TaoQuick安装进Qt环境，支持在QtCreator中使用Designer进行拖拽式设计。
+也可以将TaoQuick安装进Qt环境，支持在QtCreator中使用Designer进行拖拽式设计。
 
-安装方法可以直接用QtCreator，也可以是命令行安装。
+安装方法可以直接用QtCreator进行安装，也可以用命令行安装。
 
 ### QtCreator安装TaoQuick
 
