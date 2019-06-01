@@ -167,7 +167,6 @@ import "qrc:/Tao/Qml/"
 3. 拖拽创建组件，修改属性
 ![](Preview/Drag.gif)
 
-
 ## 特别说明
 
 TaoQuickDemo包含插件加载机制，方便后续开发一些高级功能插件。
