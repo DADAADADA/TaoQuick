@@ -20,5 +20,6 @@
         <file>Image/Button/smile-fill-hover.png</file>
         <file>Image/Window/about_gray.png</file>
         <file>Image/Window/about_white.png</file>
+        <file>Image/Window/flower.jpg</file>
     </qresource>
 </RCC>

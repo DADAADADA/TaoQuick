@@ -5,6 +5,42 @@ import "qrc:/Tao/Qml"
 
 Rectangle {
     id: root
+    SequentialAnimation {
+        running: true
+        loops: Animation.Infinite
+        ParallelAnimation {
+            PropertyAnimation { target: img1; property: "x"; to: -root.width; duration: 20000}
+            PropertyAnimation { target: img2; property: "x"; to: 0; duration: 20000}
+        }
+        ScriptAction {
+            script: { img1.x = root.width}
+        }
+        ParallelAnimation {
+            PropertyAnimation { target: img2; property: "x"; to: -root.width; duration: 20000}
+            PropertyAnimation { target: img1; property: "x"; to: 0; duration: 20000}
+        }
+        ScriptAction {
+            script: { img2.x = root.width}
+        }
+    }
+    Image {
+        id: img1
+        x: 0
+        y: 0
+        opacity: 0.2
+        width: parent.width
+        height: parent.height
+        source: "qrc:/Image/Window/flower.jpg"
+    }
+    Image {
+        id: img2
+        x: root.width
+        y: 0
+        opacity: 0.2
+        width: parent.width
+        height: parent.height
+        source: "qrc:/Image/Window/flower.jpg"
+    }
     Rectangle {
         id: vLine
         width: parent.width - 2
