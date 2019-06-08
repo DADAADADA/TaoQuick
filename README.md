@@ -12,8 +12,8 @@
     - [更多基础效果预览](#%E6%9B%B4%E5%A4%9A%E5%9F%BA%E7%A1%80%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
     - [动画效果预览](#%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
   - [TaoQuick 安装和使用](#taoquick-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
-    - [联系方式](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
-    - [赞助](#%E8%B5%9E%E5%8A%A9)
+  - [联系方式](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
+  - [赞助](#%E8%B5%9E%E5%8A%A9)
 # TaoQuick
 
 这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，
@@ -108,7 +108,7 @@
 
 [TaoQuick 安装和使用](Install.md)
 
-### 联系方式
+## 联系方式
 
 ***
 
@@ -131,7 +131,7 @@ QQ(TIM)、微信二维码
 ****** 请放心联系我，乐于提供咨询服务，也可洽谈有偿技术支持相关事宜。
 
 ***
-### 赞助
+## 赞助
 <img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/weixin.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/zhifubao.jpg?raw=true" width="30%" height="30%" />
 
 ****** 觉得分享的内容还不错, 就请作者喝杯奶茶吧~~
