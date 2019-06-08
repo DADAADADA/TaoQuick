@@ -9,15 +9,15 @@ Rectangle {
         running: true
         loops: Animation.Infinite
         ParallelAnimation {
-            PropertyAnimation { target: img1; property: "x"; to: -root.width; duration: 20000}
-            PropertyAnimation { target: img2; property: "x"; to: 0; duration: 20000}
+            PropertyAnimation { target: img1; property: "x"; to: -root.width; duration: 50000}
+            PropertyAnimation { target: img2; property: "x"; to: 0; duration: 50000}
         }
         ScriptAction {
             script: { img1.x = root.width}
         }
         ParallelAnimation {
-            PropertyAnimation { target: img2; property: "x"; to: -root.width; duration: 20000}
-            PropertyAnimation { target: img1; property: "x"; to: 0; duration: 20000}
+            PropertyAnimation { target: img2; property: "x"; to: -root.width; duration: 50000}
+            PropertyAnimation { target: img1; property: "x"; to: 0; duration: 50000}
         }
         ScriptAction {
             script: { img2.x = root.width}
