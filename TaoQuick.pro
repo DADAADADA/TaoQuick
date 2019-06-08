@@ -6,6 +6,9 @@ SUBDIRS += \
 CONFIG += ordered
 
 OTHER_FILES += README.md \
+    Install.md \
+    Preview-animation.md \
+    Preview-normal.md \
     .clang-format \
     LICENSE \
     appveyor.yml \
