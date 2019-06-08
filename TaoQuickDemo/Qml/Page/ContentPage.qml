@@ -6,7 +6,7 @@ import "qrc:/Tao/Qml"
 Rectangle {
     id: root
     SequentialAnimation {
-        running: true
+//        running: true
         loops: Animation.Infinite
         ParallelAnimation {
             PropertyAnimation { target: img1; property: "x"; to: -root.width; duration: 50000}

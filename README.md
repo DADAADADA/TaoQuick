@@ -1,4 +1,20 @@
-﻿# TaoQuick
+﻿
+- [TaoQuick](#taoquick)
+  - [徽章预览](#%E5%BE%BD%E7%AB%A0%E9%A2%84%E8%A7%88)
+    - [CI](#ci)
+    - [Repo](#repo)
+    - [Issue](#issue)
+    - [Other status](#other-status)
+  - [开发环境](#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
+  - [效果预览](#%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
+    - [启动界面](#%E5%90%AF%E5%8A%A8%E7%95%8C%E9%9D%A2)
+    - [动态换皮肤](#%E5%8A%A8%E6%80%81%E6%8D%A2%E7%9A%AE%E8%82%A4)
+    - [更多基础效果预览](#%E6%9B%B4%E5%A4%9A%E5%9F%BA%E7%A1%80%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
+    - [动画效果预览](#%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
+  - [TaoQuick 安装和使用](#taoquick-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
+    - [联系方式](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
+    - [赞助](#%E8%B5%9E%E5%8A%A9)
+# TaoQuick
 
 这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，
 
@@ -73,118 +89,37 @@
 
 ![](Preview/Splash.gif)
 
-### 按钮控件
-
-![](Preview/Buttons.gif)
-
-### 拖拽控件
-
-![](Preview/Drags.gif)
-
-### 自定义窗口
-
-![](Preview/CustomWindow.gif)
-
 ### 动态换皮肤
 
 ![](Preview/Skin.gif)
 
-### 多国语言
+预览效果太多，浏览器会卡，放进单独的Markdown
+### 更多基础效果预览
 
-![](Preview/Language.gif)
+[基础效果预览](Preview-normal.md)
 
-### 渐变
+### 动画效果预览
 
-![](Preview/Gradiant.gif)
+[动画效果预览](Preview-animation.md)
 
-### 进度条
+说明：动画效果暂不开源，博客有教程和核心代码，有需要请单独联系我。
 
-![](Preview/ProgressBar.gif)
+## TaoQuick 安装和使用
 
-## 代码结构
+[TaoQuick 安装和使用](Install.md)
 
-![](Preview/Struct.png)
-
-## TaoQuick 安装
-
-TaoQuickDemo目录是Demo项目，示例如何使用TaoQuick库。
-
-TaoQuick目录就是TaoQuick库。
-
-可以使用生成的dll库，dll生成目录在项目的bin/TaoQuick目录下。
-
-也可以将TaoQuick安装进Qt环境，支持在QtCreator中使用Designer进行拖拽式设计。
-
-安装方法可以直接用QtCreator进行安装，也可以用命令行安装。
-
-### QtCreator安装TaoQuick
-
-如下图所示:
-
-![](Preview/QtCreator-install.png)
-
-任意编译器kit都可以，项目->构建步骤->添加build步骤->Make，添加之后在make参数中输入install。最后重新构建工程，即可完成安装。
-
-TaoQuick库将被安装到{QTDIR}/qml/TaoQuick/ 路径下。
-
-### 命令行安装TaoQuick
-
-确保环境变量PATH中有QTDIR/bin，即能找到qmake
-
-在TaoQuick目录，依次执行以下命令：
-
-```
-qmake
-make
-make install
-
-```
-
-## TaoQuick dll的使用
-
-1. 将bin/TaoQuick文件夹复制到你的可执行程序同级目录下
-
-2. 在你的Qml中写上这两句，就完成了TaoQuick的导入
-```
-import TaoQuick 1.0
-import "qrc:/Tao/Qml/"
-```
-
-![](Preview/TaoQuick-use.png)
-
-`import TaoQuick 1.0` 是在导入dll库。
-`import "qrc:/Tao/Qml/` 是在导入"qrc:/Tao/Qml/"路径下的qmldir文件。这个文件描述了TaoQuick中的所有组件。导入过后就能使用全部的组件了。
-
-这种方式TaoQuick的Qml是以资源文件的方式编译进dll的，所以不支持QtCreator的语法高亮。（商业版有内建资源功能，或许可以支持）
-
-## TaoQuick Designer的使用
-
-1. 确保TaoQuick库被安装到{QTDIR}/qml/TaoQuick/目录下
-2. 重启QtCreator，并在你的Qt项目的Designer 模式，Importer列表中，选择TaoQuick。选完记得按一下Ctrl + S保存一下，让Designer正确加载TaoQuick。
-
-![](Preview/Import.png)
-
-3. 拖拽创建组件，修改属性
-![](Preview/Drag.gif)
-
-## 特别说明
-
-TaoQuickDemo包含插件加载机制，方便后续开发一些高级功能插件。
-
-高级功能插件不开源，收取一定费用，需要的请联系我。
-
-
-### 联系方式:
+### 联系方式
 
 ***
 
 | 作者 | 涛哥                           |
 | ---- | -------------------------------- |
 |开发理念 | 弘扬鲁班文化，传承工匠精神 |
-| QQ、TIM   | 759378563                      |
-| 微信 | xsd2410421                       |
+| 博客 | https://jaredtao.github.io/ |
+|知乎专栏| https://zhuanlan.zhihu.com/TaoQt |
 | 邮箱 | jared2020@163.com                |
-| blog | https://jaredtao.github.io/ |
+| 微信 | xsd2410421                       |
+| QQ、TIM | 759378563                      |
 
 ***
 
@@ -193,12 +128,12 @@ QQ(TIM)、微信二维码
 <img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/qq_connect.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/weixin_connect.jpg?raw=true" width="30%" height="30%" />
 
 
-###### 请放心联系我，乐于提供咨询服务，也可洽谈有偿技术支持相关事宜。
+****** 请放心联系我，乐于提供咨询服务，也可洽谈有偿技术支持相关事宜。
 
 ***
-#### **打赏**
+### 赞助
 <img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/weixin.jpg?raw=true" width="30%" height="30%" /><img src="https://github.com/jaredtao/jaredtao.github.io/blob/master/img/zhifubao.jpg?raw=true" width="30%" height="30%" />
 
-###### 觉得分享的内容还不错, 就请作者喝杯奶茶吧~~
+****** 觉得分享的内容还不错, 就请作者喝杯奶茶吧~~
 ***
 
