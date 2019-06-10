@@ -4,6 +4,8 @@ import TaoQuick 1.0
 import "qrc:/Tao/Qml/"
 Item {
     anchors.fill: parent
+    property color btnColor: "#06b7ed"
+    property color btnBorderColor: "orange"
     Grid {
         width: parent.width - 20
         x: 10
@@ -15,8 +17,9 @@ Item {
             width: 80
             height: 40
             text: qsTr("文本按钮")
-            property color btnColor: "#009688"
             color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
+            border.width: containsMouse ? 2 : 0
+            border.color: btnBorderColor
             onClicked: {
                 console.log("你按下了文本按钮")
             }
@@ -25,8 +28,8 @@ Item {
             width: 120
             height: 40
             radius: 20
-            property color btnColor: "#009688"
-            property color btnBorderColor: "orange"
+            property color btnColor: "#06b7ed"
+
             color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
             border.width: containsMouse ? 2 : 0
             border.color: btnBorderColor
@@ -40,8 +43,6 @@ Item {
             height: 40
             radius: 20
             text: qsTr("圆角文本按钮")
-            property color btnColor: "#009688"
-            property color btnBorderColor: "orange"
             color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
             border.width: containsMouse ? 2 : 0
             border.color: btnBorderColor
@@ -56,8 +57,7 @@ Item {
             radius: width / 2
             text: qsTr("圆按钮")
             textColor: "red"
-            property color btnColor: "#009688"
-            property color btnBorderColor: "orange"
+
             color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
             border.width: containsMouse ? 2 : 0
             border.color: btnBorderColor
@@ -72,14 +72,13 @@ Item {
             radius: 5
             text: qsTr("渐变按钮")
             textColor: "red"
-            property color btnColor: containsMouse ? Qt.darker("#009688", 1.2) : "#009688"
             color: btnColor
             gradient: Gradient {
-                GradientStop { position: 0 ; color: Qt.darker(gradientBtn.btnColor, 1.2) }
-                GradientStop { position: 0.5 ; color:  Qt.darker(gradientBtn.btnColor, 1.4)  }
-                GradientStop { position: 1 ; color:  Qt.darker(gradientBtn.btnColor, 1.6) }
+                GradientStop { position: 0 ; color: Qt.darker(btnColor, 1.2) }
+                GradientStop { position: 0.3 ; color:  Qt.darker(btnColor, 1.4)  }
+                GradientStop { position: 0.6 ; color:  Qt.darker(btnColor, 1.6)  }
+                GradientStop { position: 1 ; color:  Qt.darker(btnColor, 1.8) }
             }
-            property color btnBorderColor: "orange"
             border.width: containsMouse ? 2 : 0
             border.color: btnBorderColor
 //            color: btnColor
@@ -95,10 +94,9 @@ Item {
             radius: 5
             text: qsTr("渐变按钮")
             textColor: "red"
-            property color btnColor: containsMouse ? Qt.darker("#009688") : "#009688"
-            color: btnColor
-            gradient: "SugarLollipop"
-            property color btnBorderColor: "orange"
+
+            gradient: 19
+            color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
             border.width: containsMouse ? 2 : 0
             border.color: btnBorderColor
             onClicked: {
@@ -123,8 +121,9 @@ Item {
             hoveredUrl: "qrc:/Image/Button/smile-fill-hover.png"
             pressedUrl: "qrc:/Image/Button/cry-fill.png"
             text: qsTr("图文按钮")
-            property color btnColor: containsMouse ? Qt.darker("#009688") : "#009688"
-            color: btnColor
+            color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
+            border.width: containsMouse ? 2 : 0
+            border.color: btnBorderColor
             layoutType: layoutImageLeft
             onClicked: {
                 console.log("你按下了图片按钮")
@@ -137,8 +136,9 @@ Item {
             hoveredUrl: "qrc:/Image/Button/smile-fill-hover.png"
             pressedUrl: "qrc:/Image/Button/cry-fill.png"
             text: qsTr("图文按钮")
-            property color btnColor: containsMouse ? Qt.darker("#009688") : "#009688"
-            color: btnColor
+            color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
+            border.width: containsMouse ? 2 : 0
+            border.color: btnBorderColor
             layoutType: layoutImageRight
             onClicked: {
                 console.log("你按下了图片按钮")
@@ -151,8 +151,9 @@ Item {
             hoveredUrl: "qrc:/Image/Button/smile-fill-hover.png"
             pressedUrl: "qrc:/Image/Button/cry-fill.png"
             text: qsTr("图文按钮")
-            property color btnColor: containsMouse ? Qt.darker("#009688") : "#009688"
-            color: btnColor
+            color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
+            border.width: containsMouse ? 2 : 0
+            border.color: btnBorderColor
             layoutType: layoutImageUp
             onClicked: {
                 console.log("你按下了图片按钮")
@@ -165,8 +166,9 @@ Item {
             hoveredUrl: "qrc:/Image/Button/smile-fill-hover.png"
             pressedUrl: "qrc:/Image/Button/cry-fill.png"
             text: qsTr("图文按钮")
-            property color btnColor: containsMouse ? Qt.darker("#009688") : "#009688"
-            color: btnColor
+            color: containsPress ? Qt.darker(btnColor, 1.2) : (containsMouse ? Qt.lighter(btnColor, 1.2) : btnColor)
+            border.width: containsMouse ? 2 : 0
+            border.color: btnBorderColor
             layoutType: layoutImageDown
             onClicked: {
                 console.log("你按下了图片按钮")
