@@ -1,12 +1,12 @@
 ﻿import QtQuick 2.9
-
+import QtQuick.Controls 2.12
 import TaoQuick 1.0
 import "qrc:/Tao/Qml"
 
 Rectangle {
     id: root
     SequentialAnimation {
-//        running: true
+        running: s.checked
         loops: Animation.Infinite
         ParallelAnimation {
             PropertyAnimation { target: img1; property: "x"; to: -root.width; duration: 50000}
@@ -22,6 +22,13 @@ Rectangle {
         ScriptAction {
             script: { img2.x = root.width}
         }
+    }
+    Switch {
+        id: s
+        text: "Background"
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.topMargin: 40
     }
     Image {
         id: img1
