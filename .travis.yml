@@ -9,7 +9,6 @@ matrix:
       env: 
         releaseName=TaoQuickDemo_ubuntu_xenial_x64.AppImage
       cache:
-        bundler: true
         apt: true
         directories:
             - /opt/qt512/
@@ -19,7 +18,6 @@ matrix:
       env: 
         releaseName=TaoQuickDemo_macos10-14_xcode10-2.dmg
       cache:
-        bundler: true
         directories:
             - /usr/local/opt/qt
 before_install:
@@ -30,7 +28,6 @@ script:
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then chmod a+x ./scripts/ubuntu/build.sh; ./scripts/ubuntu/build.sh; fi
 before_deploy:
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then chmod a+x ./scripts/macos/deploy.sh; ./scripts/macos/deploy.sh; fi
-    - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then chmod a+x ./scripts/ubuntu/deploy.sh; ./scripts/ubuntu/deploy.sh; fi
 deploy:              # 部署
   provider: releases # 部署到 GitHub Release，除此之外，Travis CI 还支持发布到 fir.im、AWS、Google App Engine 等
   api_key: $GITHUB_OAUTH_TOKEN # 填写 GitHub 的 token （Settings -> Personal access tokens -> Generate new token）
