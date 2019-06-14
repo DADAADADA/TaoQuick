@@ -34,10 +34,10 @@
 ### 十字
 ![](Preview/Animation/8.gif)
 ### 菱形
-![](Preview/Animation/12.gif)
-### 轮子
 ![](Preview/Animation/9.gif)
-### 棋盘
+### 轮子
 ![](Preview/Animation/10.gif)
-### 溶解
+### 棋盘
 ![](Preview/Animation/11.gif)
+### 溶解
+![](Preview/Animation/12.gif)
