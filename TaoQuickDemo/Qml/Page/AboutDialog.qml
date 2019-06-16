@@ -1,5 +1,5 @@
-﻿import QtQuick 2.9
-import QtQuick.Controls 2.5
+﻿import QtQuick 2.12
+import QtQuick.Controls 2.12
 
 import TaoQuick 1.0
 import "qrc:/Tao/Qml"
@@ -8,6 +8,7 @@ Popup {
     id: root
     width: 500
     height: 290
+
     background: Rectangle {
         id: back
         width: root.width
@@ -16,6 +17,10 @@ Popup {
         color: gConfig.titleBackground
         border.width: 1
         border.color: gConfig.reserverColor
+        TMoveArea {
+            anchors.fill: parent
+            control: root
+        }
         Image {
             id: img
             anchors.left: parent.left
@@ -113,4 +118,5 @@ Popup {
         y = (parent.height - height) / 2
         open()
     }
+
 }
