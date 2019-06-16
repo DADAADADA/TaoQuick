@@ -1,4 +1,5 @@
 ﻿# 目录
+- [目录](#%E7%9B%AE%E5%BD%95)
 - [TaoQuick](#taoquick)
   - [徽章预览](#%E5%BE%BD%E7%AB%A0%E9%A2%84%E8%A7%88)
     - [CI](#ci)
@@ -11,18 +12,21 @@
     - [动态换皮肤](#%E5%8A%A8%E6%80%81%E6%8D%A2%E7%9A%AE%E8%82%A4)
     - [更多基础效果预览](#%E6%9B%B4%E5%A4%9A%E5%9F%BA%E7%A1%80%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
     - [动画效果预览](#%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
+    - [页面切换效果预览](#%E9%A1%B5%E9%9D%A2%E5%88%87%E6%8D%A2%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88)
   - [TaoQuick 安装和使用](#taoquick-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8)
   - [联系方式](#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F)
   - [赞助](#%E8%B5%9E%E5%8A%A9)
 # TaoQuick
 
-这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，
+这是一个Qt/Qml组件库，集成了常用的QtQuick组件，并做了适当的属性封装、功能扩展，以方便开发Qml程序。
 
-以方便开发Qml程序。
+实现原理可以参考《Qml组件化编程》《Qml特效》系列教程，以下网站都有收录:
 
-实现原理可以参考[博客](https://jaredtao.github.io) 或者 [知乎专栏](https://zhuanlan.zhihu.com/TaoQt)
+[涛哥的博客](https://jaredtao.github.io)
 
-《Qml组件化编程》系列文章。
+[知乎专栏-Qt进阶之路](https://zhuanlan.zhihu.com/TaoQt)
+
+微信公众号： Qt进阶之路
 
 ## 徽章预览
 ### CI
@@ -102,7 +106,12 @@
 
 [动画效果预览](Preview-animation.md)
 
-说明：动画效果暂不开源，博客有教程和核心代码，有需要请单独联系我。
+说明：动画效果暂不开源，博客/知乎/公众号会有教程和核心代码，有需要请单独联系我。
+
+### 页面切换效果预览
+[页面切换效果预览](Preview-PageSwitch.md)
+
+说明：页面切换效果暂不开源，博客/知乎/公众号会有教程和核心代码，有需要请单独联系我。
 
 ## TaoQuick 安装和使用
 
@@ -117,6 +126,7 @@
 |开发理念 | 弘扬鲁班文化，传承工匠精神 |
 | 博客 | https://jaredtao.github.io/ |
 |知乎专栏| https://zhuanlan.zhihu.com/TaoQt |
+|微信公众号| Qt进阶之路 |
 | 邮箱 | jared2020@163.com                |
 | 微信 | xsd2410421                       |
 | QQ、TIM | 759378563                      |

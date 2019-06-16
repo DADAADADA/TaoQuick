@@ -17,9 +17,6 @@ matrix:
       osx_image: xcode10.2
       env: 
         releaseName=TaoQuickDemo_macos10-14_xcode10-2.dmg
-      cache:
-        directories:
-            - /usr/local/opt/qt
 before_install:
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then chmod a+x ./scripts/macos/install.sh;  ./scripts/macos/install.sh; fi
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then chmod a+x ./scripts/ubuntu/install.sh; ./scripts/ubuntu/install.sh; fi
