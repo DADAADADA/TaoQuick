@@ -1,9 +1,6 @@
 TEMPLATE = lib
-CONFIG(debug, debug|release) {
-    TARGET = TaoQuickd
-} else {
-    TARGET = TaoQuick
-}
+
+TARGET = $$qtLibraryTarget(TaoQuick)
 
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
