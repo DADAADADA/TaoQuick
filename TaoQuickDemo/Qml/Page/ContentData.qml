@@ -64,5 +64,13 @@ QtObject {
                 ListElement { name: qsTr("对话框"); title: qsTr("对话框"); url: "qrc:/Qml/Contents/BaseComponent/Dialogs.qml"}
             ]
         }
+        ListElement {
+            name: qsTr("ShaderEffect"); title: qsTr("ShaderEffect"); children: [
+                ListElement { name: qsTr("穿云洞"); title: qsTr("穿云洞"); url: "qrc:/Qml/Contents/ShaderEffect/CloudHole.qml"},
+                ListElement { name: qsTr("星球之光"); title: qsTr("星球之光"); url: "qrc:/Qml/Contents/ShaderEffect/Planet.qml"},
+                ListElement { name: qsTr("蜗牛"); title: qsTr("蜗牛"); url: "qrc:/Qml/Contents/ShaderEffect/Snail.qml"},
+                ListElement { name: qsTr("超级马里奥"); title: qsTr("超级马里奥"); url: "qrc:/Qml/Contents/ShaderEffect/SuperMario.qml"}
+            ]
+        }
     }
 }

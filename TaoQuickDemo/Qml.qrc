@@ -15,5 +15,10 @@
         <file>Qml/Contents/Welcome/Welcome.qml</file>
         <file>Qml/Page/AboutDialog.qml</file>
         <file>Qml/Contents/BaseComponent/Dialogs.qml</file>
+        <file>Qml/Contents/ShaderEffect/CloudHole.qml</file>
+        <file>Qml/Contents/ShaderEffect/Planet.qml</file>
+        <file>Qml/Contents/ShaderEffect/Snail.qml</file>
+        <file>Qml/Contents/ShaderEffect/SuperMario.qml</file>
+        <file>Qml/Contents/ShaderEffect/Planet1.png</file>
     </qresource>
 </RCC>
