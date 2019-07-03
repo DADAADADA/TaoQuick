@@ -15,6 +15,7 @@ int main(int argc, char **argv)
     Logger::initLog();
 
     QSurfaceFormat fmt = QSurfaceFormat::defaultFormat();
+    qDebug() << fmt.version();
     fmt.setSamples(4);
     QSurfaceFormat::setDefaultFormat(fmt);
     TaoView view;

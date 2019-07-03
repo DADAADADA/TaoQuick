@@ -4,14 +4,15 @@ TARGET = $$qtLibraryTarget(TaoQuick)
 
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
+uri = TaoQuick
 CONFIG(debug, debug|release){
   CONFIG -=app_bundle
   BundlePath=
+  DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/debug/$${BundlePath}$${uri})
 } else {
   BundlePath=TaoQuickDemo.app/Contents/MacOS/
+  DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/release/$${BundlePath}$${uri})
 }
-
-uri = TaoQuick
 
 include(../Common/TaoVersion.pri)
 include(Qml/TaoQuickDesigner.pri)
@@ -25,7 +26,7 @@ RESOURCES += \
     Image.qrc \
     Qml.qrc
 
-DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/$${BundlePath}$${uri})
+
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML2_IMPORT_PATH += $$_PRO_FILE_PWD_/Qml

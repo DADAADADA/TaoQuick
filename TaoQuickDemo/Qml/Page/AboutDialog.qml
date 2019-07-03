@@ -6,8 +6,8 @@ import "qrc:/Tao/Qml"
 
 Popup {
     id: root
-    width: 500
-    height: 290
+    width: 600
+    height: 340
 
     background: Rectangle {
         id: back
@@ -55,12 +55,14 @@ Popup {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: appInfo.appName + " " + appInfo.appVersion
+
                 font.pixelSize: 20
                 renderType: Text.NativeRendering
             }
             Text {
                 anchors.left: parent.left
                 anchors.right: parent.right
+                wrapMode: Text.WordWrap
                 text: "Base on Qt " + appInfo.compilerVendor
                 font.pixelSize: 16
                 renderType: Text.NativeRendering

@@ -21,11 +21,19 @@ win32 {
 macos {
     ICON = milk.icns
 }
-DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/)
-MOC_DIR = build/moc
-RCC_DIR = build/rcc
-UI_DIR = build/ui
-OBJECTS_DIR = build/obj
+CONFIG(debug,debug|release){
+    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/debug/)
+    MOC_DIR = build/debug/moc
+    RCC_DIR = build/debug/rcc
+    UI_DIR = build/debug/ui
+    OBJECTS_DIR = build/debug/obj
+} else {
+    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/release/)
+    MOC_DIR = build/release/moc
+    RCC_DIR = build/release/rcc
+    UI_DIR = build/release/ui
+    OBJECTS_DIR = build/release/obj
+}
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML2_IMPORT_PATH += $${_PRO_FILE_PWD_}/../Core/Qml
