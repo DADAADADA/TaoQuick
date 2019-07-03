@@ -27,7 +27,9 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         text: "FPS" + fps
         font.pixelSize: 20
-        renderType: Text.NativeRendering
+        style: Text.Outline
+        styleColor: "#606060"
+//        renderType: Text.NativeRendering
         color: textColor
     }
     Timer {
