@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 SUBDIRS += \
-    TaoQuick \
-    TaoQuickDemo
+    TaoQuickDemo \
+    TaoQuick
 
 CONFIG += ordered
 

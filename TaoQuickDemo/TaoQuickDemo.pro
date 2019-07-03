@@ -2,6 +2,7 @@ TEMPLATE = app
 TARGET = TaoQuickDemo
 QT += qml quick
 CONFIG += plugin c++14 qtquickcompiler
+
 include(../Common/TaoVersion.pri)
 #msvc{
 #    QMAKE_CFLAGS += -source-charset:utf-8
@@ -61,13 +62,20 @@ TRANSLATIONS += \
     trans/trans_de.qs \
     trans/trans_ar.qs
 
+CONFIG(debug, debug|release){
+  CONFIG -=app_bundle
+  BundlePath=
+} else {
+  BundlePath=TaoQuickDemo.app/Contents/MacOS/
+}
+
 
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
     copy_qm.target = copyqm
     copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
     srs = $$_PRO_FILE_PWD_/Trans/*.qm
-    tgt = $$DESTDIR
+    tgt = $$DESTDIR/$${BundlePath}
     win32 {
         tgt ~= s,/,\\\\,g
         srs ~= s,/,\\\\,g
