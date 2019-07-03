@@ -69,14 +69,14 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
-
-CONFIG(debug, debug|release){
-  CONFIG -=app_bundle
-  BundlePath=
-} else {
-  BundlePath=TaoQuickDemo.app/Contents/MacOS/
+BundlePath=
+macos{
+    CONFIG(debug, debug|release){
+          CONFIG -=app_bundle
+    } else {
+          BundlePath=TaoQuickDemo.app/Contents/MacOS/
+    }
 }
-
 
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {

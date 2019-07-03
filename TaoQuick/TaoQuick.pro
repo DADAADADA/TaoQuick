@@ -5,13 +5,20 @@ TARGET = $$qtLibraryTarget(TaoQuick)
 QT += qml quick
 CONFIG += plugin c++11 qtquickcompiler
 uri = TaoQuick
+
+BundlePath=
+macos{
+    CONFIG(debug, debug|release){
+          CONFIG -=app_bundle
+    } else {
+          BundlePath=TaoQuickDemo.app/Contents/MacOS/
+    }
+}
+
 CONFIG(debug, debug|release){
-  CONFIG -=app_bundle
-  BundlePath=
-  DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/debug/$${BundlePath}$${uri})
+    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/debug/$${BundlePath}$${uri})
 } else {
-  BundlePath=TaoQuickDemo.app/Contents/MacOS/
-  DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/release/$${BundlePath}$${uri})
+    DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/../bin/release/$${BundlePath}$${uri})
 }
 
 include(../Common/TaoVersion.pri)
