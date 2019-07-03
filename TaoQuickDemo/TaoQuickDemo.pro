@@ -12,7 +12,7 @@ include(../Common/TaoVersion.pri)
 CONFIG += precompile_header
 PRECOMPILED_HEADER = Src/stdafx.h
 precompile_header:!isEmpty(PRECOMPILED_HEADER) {
-DEFINES += USING_PCH
+    DEFINES += USING_PCH
 }
 
 win32 {
@@ -69,26 +69,30 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
-BundlePath=
+
 macos{
     CONFIG(debug, debug|release){
           CONFIG -=app_bundle
     } else {
-          BundlePath=TaoQuickDemo.app/Contents/MacOS/
+        bundle_qm.files =$$files($$_PRO_FILE_PWD_/Trans/*.qm)
+        bundle_qm.path= Contents/MacOS
+        QMAKE_BUNDLE_DATA += bundle_qm
     }
 }
 
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
-    copy_qm.target = copyqm
-    copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
-    srs = $$_PRO_FILE_PWD_/Trans/*.qm
-    tgt = $$DESTDIR/$${BundlePath}
-    win32 {
-        tgt ~= s,/,\\\\,g
-        srs ~= s,/,\\\\,g
+    !macos {
+        copy_qm.target = copyqm
+        copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
+        srs = $$_PRO_FILE_PWD_/Trans/*.qm
+        tgt = $$DESTDIR
+        win32 {
+            tgt ~= s,/,\\\\,g
+            srs ~= s,/,\\\\,g
+        }
+        copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
+        QMAKE_EXTRA_TARGETS += copy_qm
+        PRE_TARGETDEPS += $$copy_qm.target
     }
-    copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
-    QMAKE_EXTRA_TARGETS += copy_qm
-    PRE_TARGETDEPS += $$copy_qm.target
 }
