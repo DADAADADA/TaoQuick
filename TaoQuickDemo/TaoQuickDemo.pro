@@ -82,17 +82,15 @@ macos{
 
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
-    debug {
-        copy_qm.target = copyqm
-        copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
-        srs = $$_PRO_FILE_PWD_/Trans/*.qm
-        tgt = $$DESTDIR
-        win32 {
-            tgt ~= s,/,\\\\,g
-            srs ~= s,/,\\\\,g
-        }
-        copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
-        QMAKE_EXTRA_TARGETS += copy_qm
-        PRE_TARGETDEPS += $$copy_qm.target
+    copy_qm.target = copyqm
+    copy_qm.depends = $$_PRO_FILE_PWD_/Trans/*.qm
+    srs = $$_PRO_FILE_PWD_/Trans/*.qm
+    tgt = $$DESTDIR
+    win32 {
+        tgt ~= s,/,\\\\,g
+        srs ~= s,/,\\\\,g
     }
+    copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
+    QMAKE_EXTRA_TARGETS += copy_qm
+    PRE_TARGETDEPS += $$copy_qm.target
 }
