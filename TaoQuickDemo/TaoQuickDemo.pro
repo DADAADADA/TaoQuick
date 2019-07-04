@@ -69,17 +69,6 @@ TRANSLATIONS += \
     trans/trans_vi.qs \
     trans/trans_de.qs \
     trans/trans_ar.qs
-
-macos{
-    CONFIG(debug, debug|release){
-          CONFIG -=app_bundle
-    } else {
-        bundle_qm.files =$$files($$_PRO_FILE_PWD_/Trans/*.qm)
-        bundle_qm.path= Contents/MacOS
-        QMAKE_BUNDLE_DATA += bundle_qm
-    }
-}
-
 #pretarget for copy qm
 !equals(_PRO_FILE_PWD_, $$DESTDIR) {
     copy_qm.target = copyqm
@@ -91,6 +80,21 @@ macos{
         srs ~= s,/,\\\\,g
     }
     copy_qm.commands = $${QMAKE_COPY_FILE} $${srs} $${tgt}
+
+}
+macos{
+    CONFIG(debug, debug|release){
+        CONFIG -=app_bundle
+        QMAKE_EXTRA_TARGETS += copy_qm
+        PRE_TARGETDEPS += $$copy_qm.target
+    } else {
+        bundle_qm.files =$$files($$_PRO_FILE_PWD_/Trans/*.qm)
+        bundle_qm.path= Contents/MacOS
+        QMAKE_BUNDLE_DATA += bundle_qm
+    }
+} else {
     QMAKE_EXTRA_TARGETS += copy_qm
     PRE_TARGETDEPS += $$copy_qm.target
 }
+
+
